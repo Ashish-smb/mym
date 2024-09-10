@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<!-- Owl Carousel -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- Font Awesome 6.6.0 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<!-- Topbar -->
+<header class="hidden lg:block px-6 lg:px-14 bg-danger-light py-1 ">
+    <div class="flex justify-between items-center">
+        <div class="flex gap-5 text-white text-sm">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot"></i>
+                256 B Street 45 Newyork, Newyork
+            </div>    
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-phone"></i>
+                +91 9565 162223
+            </div>    
+        </div>
+        <div class="flex gap-5">
+            <a href="#">
+                <i class="fa-brands fa-facebook-f p-3 text-sm w-px h-px flex justify-center items-center rounded-full border hover:bg-white hover:text-red-600 text-white duration-500"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram p-3 text-sm w-px h-px flex justify-center items-center rounded-full border hover:bg-white hover:text-red-600 text-white duration-500"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-x-twitter p-3 text-sm w-px h-px flex justify-center items-center rounded-full border hover:bg-white hover:text-red-600 text-white duration-500"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- logo -->
+<div class="px-6 lg:px-14 ">
+    <div class="flex justify-between items-center border-b">
+        <img src="assets/imgs/fonts/font1.png" alt="" class="h-[100px]">
+        <img src="assets/imgs/logo2.png" alt="" class="h-[150px]">
+        <button class="border bg-danger-light text-white py-2 px-6 rounded text-lg hover:bg-red-900 duration-500">
+            <a href="#">
+                Donate Us
+            </a>
+        </button>
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav class="hidden lg:block py-2 px-6 lg:px-14 sticky top-0 z-20 bg-white mb-8">
+    <div class="hidden lg:flex justify-between items-center border-b relative">
+        <ul class="flex gap-6">
+            <li>
+                <a href="#"
+                    class="block font-semibold py-3 px-4 border-slate-400 duration-300 hover:text-red-700">
+                    Home
+                </a>
+            </li>
+
+            <li class="group">
+                <a href="about.php"
+                    class="block font-semibold py-3 px-4 group border-slate-400 duration-300 hover:text-red-700  ">
+                    About Us
+                    <i class="fa-solid fa-chevron-down group-hover:-rotate-180 duration-300"></i>
+                </a>
+                <ul class="absolute hidden w-40 leading-8 border-danger-light text-white font-semibold m-0 group-hover:block bg-red-700 duration-1000">
+                    <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300">
+                        <a href="#" class="pl-4">History</a>
+                    </li>
+                    <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300" >
+                        <a href="#" class="pl-4">About</a>
+                    </li>
+                    <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300" >
+                        <a href="#" class="pl-4">Mission</a>
+                    </li>
+                    <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300" >
+                        <a href="#" class="pl-4">Vision</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="group">
+                <a href="#"
+                    class="block font-semibold py-3 px-4 border-slate-400 duration-300 hover:text-red-700">
+                    Our Work
+                    <i class="fa-solid fa-chevron-down group-hover:-rotate-180 duration-300"></i>
+                </a>
+                <ul class="absolute hidden w-40 leading-8 border-danger-light text-white font-semibold m-0 group-hover:block bg-red-700 duration-1000">
+                    <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300">
+                        <a href="#" class="pl-4">Projects</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="voulnteer.php"
+                    class="block font-semibold py-3 px-4 border-slate-400 duration-300 hover:text-red-700">
+                    Causes
+                </a>
+            </li>
+
+            <li>
+                <a href="#"
+                    class="block font-semibold py-3 px-4 border-slate-400 duration-300 hover:text-red-700">
+                    Charity Story
+                </a>
+            </li>
+
+            <li class="group">
+                <a href="contact.php"
+                    class="block font-semibold py-3 px-4 border-slate-400 duration-300 hover:text-red-700">
+                    Join Us
+                    <i class="fa-solid fa-chevron-down group-hover:-rotate-180 duration-300"></i>
+                </a>
+                <ul class="absolute hidden w-40 leading-8 border-danger-light text-white font-semibold m-0 group-hover:block bg-red-700 duration-1000">
+                    <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300">
+                        <a href="#" class="pl-4">As Volunteer</a>
+                    </li>
+                    <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300">
+                        <a href="#" class="pl-4">As Member</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <i class="fa-solid fa-bars cursor-pointer"></i>
+    </div>
+</nav>
+
+<!-- Navbar Mobile -->
+<nav class="flex lg:hidden py-4" x-data="{showSidebar: false}">
+    <!-- Header -->
+    <div class="flex justify-between items-center px-8 w-full">
+        <img src="assets/imgs/logo.png" alt="" class="w-1/2">
+        <button @click="showSidebar = !showSidebar" class="text-xl md:text-2xl">
+            <i class="fas" :class="showSidebar ? 'fa-xmark' : 'fa-bars'"></i>
+        </button>
+    </div>
+
+    <!-- Nav -->
+    <div class="fixed top-0 bg-slate-100 text-slate-800 h-screen w-full md:w-1/2 z-50 duration-300"
+        :class="showSidebar ? 'left-0' : '-left-full'">
+        <button class="absolute right-4 top-4 px-4 bg-danger text-white" @click="showSidebar = false">
+            <i class="fas fa-xmark"></i>
+        </button>
+        <img src="assets/imgs/logo.png" alt="" class="py-3 px-8">
+        
+        <ul class="uppercase">                
+            <li>
+                <a href="about.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-success">
+                    About Us
+                </a>
+            </li>
+            <li>
+                <a href="#" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-success">
+                    Our Work
+                </a>
+            </li>
+            <li>
+                <a href="voulnteer.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-success">
+                    Get Involved
+                </a>
+            </li>
+            <li>
+                <a href="contact.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-success">
+                    Contact Us
+                </a>
+            </li>
+            <li>
+                <a href="#" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-success">
+                    Blog
+                </a>
+            </li>
+            <li>
+                <a href="#" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-success">
+                    Support our Cause
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- banner -->
+<section class="px-6 lg:px-14 mb-8">
+    <div class="grid grid-cols-6 gap-2">
+        <div class="col-span-4 h-[600px] relative">
+            <img src="assets/imgs/banner1.jpeg" alt="" class="w-full h-full object-cover lg:rounded-l brightness-90">
+            <div class="absolute top-10 px-6">
+                <p class="text-2xl text-white font-semibold">
+                    Child Crutely and Neglect Crimes Continue to Rise Every Year
+                </p>
+                <p class="text-slate-200">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="absolute bottom-10 px-6">
+                <p class="text-2xl text-white font-semibold">
+                    Raise Your Voice Against the Child Crutely
+                </p>
+                <p class="text-slate-200">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-span-2 grid grid-rows-2 h-[600px] gap-2">
+            <div class="relative">
+                <img src="assets/imgs/banner2.jpeg" alt="" class="w-full h-full object-cover lg:rounded-r brightness-50">
+                <div class="absolute bottom-5 px-6">
+                    <p class="text-xl text-white font-semibold">
+                        Make Childrens Happy
+                    </p>
+                    <p class="text-slate-200 text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+            <div class="relative" >
+                <img src="assets/imgs/banner3.jpeg" alt="" class="w-full h-full object-cover lg:rounded-r brightness-50">
+                <div class="absolute bottom-5 px-6">
+                    <p class="text-xl text-white font-semibold">
+                        Make Childrens Happy
+                    </p>
+                    <p class="text-slate-200 text-sm">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- our work -->
+<!-- story -->
+<!-- Events -->
+<!-- join us -->
+
+
+<!-- Events sections -->
+<section class="grid-cols-8 gap-5 flex px-6 lg:px-14 bg-slate-100 mb-8 py-10">
+    <div class="col-span-2">
+        <div class="bg-white rounded-lg shadow-lg px-6 py-2 space-y-5">
+            <h1 class="font-bold text-lg text-red-700">Recent Event</h1>
+            <span class="bg-slate-500 w-full h-2"></span>
+            <span class="bg-slate-500 w-full h-2"></span>
+            <h6 class="font-bold text-sm text-red-700">Donate to Others for Self</h6>
+            <p class="text-gray-500">Lorem Ipsum is simply dummy text <br> of the printing and giones  typesetting <br> industry. Lorem Ipsum has been the</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg px-6 py-2 space-y-5 my-8">
+            <h1 class="font-bold text-lg text-red-700">Top Volunteers</h1>
+            <span class="bg-slate-500 w-full h-2"></span>
+            <div class="flex">
+                <img src="" alt="">
+                <div class="">
+                    <h1 class="font-bold text-sm text-red-700">Lovey Susan</h1>
+                    <p class="text-gray-500">Volunteers Manager</p>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="col-span-4">
+        <div class="bg-white rounded-lg shadow-lg p-6 space-y-5">
+            <div class="flex gap-5 ">
+                <h1 class="font-bold text-lg text-red-700">News feed </h1>
+                <h1 class="font-bold text-lg text-red-700">videos</h1>
+            </div>
+            <div class="bg-slate-200 w-full h-1">
+                <div class="bg-red-700 w-24 h-1"></div>
+            </div>
+            <img src="assets/imgs/banner1.jpeg" alt="" class="w-full">
+        </div>
+    </div>
+    <div class="col-span-2 ">
+        <div class="bg-white rounded-lg shadow-lg px-6 py-2 space-y-5">
+            <h1 class="font-bold text-lg text-red-700">You’ve Helped Rais</h1>
+            <span></span>
+            <p class="text-gray-500">Nisl tincidunt eget nullam non nisi est sit amet facilisis.</p>
+            <div class="bg-slate-300 w-full h-5">
+                <div class="bg-red-400 w-24 h-5"></div>
+            </div>
+            <h1 class="text-gray-500 font-extrabold">Now <span class="text-red-950 font-extrabold">$7500</span></h1>
+            <h1 class="text-gray-500 font-extrabold">Now <span class="text-red-950 font-extrabold">$7500</span></h1>
+            <button class="bg-red-700 text-white font-extrabold h-10 rounded-lg w-full">Donate Now</button>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonial -->
+<section class="px-6 lg:px-14 mb-8">
+    <h2 class="text-4xl text-center font-bold mb-8">
+        Testimonial
+    </h2>
+    <div class="grid grid-cols-2">
+        <div class="p-4">
+            <h2 class="text-4xl font-bold mb-8 text-red-700">
+                Reviews
+            </h2>
+            <div class="owl-carousel testimonial-carousel mb-8">
+                <div>
+                    <p class="text-xl mb-8" >
+                        <i class="fa-solid fa-quote-left"></i>
+                        Creativiteit, velen praten erover en menen alles erover te weten, maar het is maar weinigen echt gegeven. Al heel wat jaren werken wij samen met.
+                        <i class="fa-solid fa-quote-right"></i>
+                    </p>
+                    <h2 class="text-2xl font-semibold ">
+                        Kritika Upadhay
+                    </h2>
+                    <span class="text-slate-500">
+                        charity volunteering Delhi
+                    </span>
+                </div>
+    
+            </div>
+            <a href="#" class="border px-6 py-2 bg-danger-light text-white hover:bg-red-700 duration-800 group duration-500">
+                Donate Us 
+                <i class="fa-solid fa-arrow-right ml-2 -rotate-45 group-hover:rotate-0 duration-500"></i>
+            </a>
+        </div>
+
+        <div class="h-[400px]">
+            <img src="assets/imgs/banner3.jpeg" alt="" class="h-full w-full object-cover">
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer class="bg-danger py-16 px-6 lg:px-14">
+    <div class="grid grid-cols-4 gap-5">
+        <div>
+            <img src="assets/imgs/logo3.png" alt="" class="h-[100px] mb-4" >
+            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="text-slate-200">
+            <h5 class="text-2xl font-semibold mb-4 text-white">Contact Us</h5>
+            <ul class="leading-8">
+            <li>
+                <i class="fa-solid fa-location-dot"></i>
+                RZA-1/7, First Floor. Ploat No-15, Dwarkapuri, New Delhi 110019
+            </li>
+            <li>
+                <i class="fa-solid fa-phone"></i>
+                9565162223/7887270564
+            </li>
+            <li>
+                <i class="fa-solid fa-envelope"></i>
+                manavyogmanch2005@gmail.com
+            </li>
+            </ul>
+        </div>
+
+        <div class="text-slate-200">
+            <h5 class="text-2xl font-semibold text-white mb-4">Social Media</h5>
+            <ul>
+              <div class="flex gap-5">
+              <a href="#">
+                  <i class="fa-brands fa-facebook-f p-4 w-px h-px flex justify-center items-center rounded-full border hover:bg-white hover:text-red-600 text-white duration-500"></i>
+              </a>
+              <a href="#">
+                  <i class="fa-brands fa-instagram p-4 w-px h-px flex justify-center items-center rounded-full border hover:bg-white hover:text-red-600 text-white duration-500"></i>
+              </a>
+              <a href="#">
+                  <i class="fa-brands fa-x-twitter p-4 w-px h-px flex justify-center items-center rounded-full border hover:bg-white hover:text-red-600 text-white duration-500"></i>
+              </a>
+              </div>
+              
+            </ul>
+        </div>
+
+        <div class="text-slate-200 leading-6">
+            <h5 class="text-2xl font-semibold text-white mb-4">Newsletter</h5>
+            <p class="mb-2" >Stay up to date with our latest news and updates.</p>
+            <form>
+                <input type="email" class="w-full p-2 text-sm text-gray-700 outline-none" placeholder="Enter Your Email Address">
+                <button class="py-2 px-6 my-4 bg-orange-500 rounded duration-500 hover:bg-orange-600">
+                    Contact Us
+                </button>
+            </form>
+        </div>
+    </div>
+</footer>
+
+<!-- JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Alpine -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.14.1/cdn.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Custom JS -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>

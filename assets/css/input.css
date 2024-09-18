@@ -88,6 +88,9 @@
     .title-2xl {
         @apply text-6xl font-bold mb-3;
     }
+    html {
+        scroll-behavior: smooth;
+    }
 
     
 }

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<!-- Owl Carousel -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- Font Awesome 6.6.0 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body x-data="{lastScrollTop:0, navbarVisible:true}" 
+@scroll.window="handleScroll" >
+<!-- Topbar -->
+<header class="hidden lg:block px-6 lg:px-14 bg-danger-light py-1 ">
+    <div class="flex justify-between items-center">
+        <div class="flex gap-5 text-white text-sm">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-location-dot"></i>
+                256 B Street 45 Newyork, Newyork
+            </div>    
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-phone"></i>
+                +91 9565 162223
+            </div>    
+        </div>
+        <div class="flex gap-5">
+            <a href="#">
+                <i class="fa-brands fa-facebook-f p-3 text-sm w-px h-px flex justify-center items-center rounded-full border hover:bg-white hover:text-red-600 text-white duration-500"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram p-3 text-sm w-px h-px flex justify-center items-center rounded-full border hover:bg-white hover:text-red-600 text-white duration-500"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-x-twitter p-3 text-sm w-px h-px flex justify-center items-center rounded-full border hover:bg-white hover:text-red-600 text-white duration-500"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- logo -->
+<div class="px-6 lg:px-14 lg:block hidden">
+    <div class="flex justify-between items-center border-b">
+        <a href="index.html">
+            <img src="assets/imgs/logo2.png" alt="">
+        </a>
+        <button class="border bg-danger-light text-white font-bold py-2 px-6 rounded text-lg hover:bg-red-900 duration-500">
+            <a href="contact.html">
+                Donate Us
+            </a>
+        </button>
+    </div>
+</div>
+
+
+<!-- Navbar -->
+<nav class="hidden lg:block px-6 lg:px-14 sticky top-0 z-20 mb-8" x-show="navbarVisible" >
+    <div class="hidden lg:flex  justify-between  bg-danger-light text-white items-center relative">
+        <ul class="flex gap-6">
+            <li>
+                <a href="#"
+                    class="block font-semibold py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
+                    Home
+                </a>
+            </li>
+
+            <li class="group">
+                <a href="about.php"
+                    class="block font-semibold py-3 px-4 group border-slate-400 duration-300 hover:text-red-200  ">
+                    About Us
+                    <i class="fa-solid fa-chevron-down group-hover:-rotate-180 duration-300"></i>
+                </a>
+                <ul class="absolute hidden w-40 leading-8 border-danger-light text-white font-semibold m-0 group-hover:block bg-red-700 duration-1000">
+                    <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300">
+                        <a href="#" class="pl-4">History</a>
+                    </li>
+                    <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300" >
+                        <a href="#" class="pl-4">About</a>
+                    </li>
+                    <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300" >
+                        <a href="#" class="pl-4">Mission</a>
+                    </li>
+                    <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300" >
+                        <a href="#" class="pl-4">Vision</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="group">
+                <a href="#"
+                    class="block font-semibold py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
+                    Our Projects
+                </a>
+                
+                
+            </li>
+            
+            <li>
+                <a href="voulnteer.php"
+                    class="block font-semibold py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
+                    Causes
+                </a>
+            </li>
+
+            <li>
+                <a href="#"
+                    class="block font-semibold py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
+                    Case Story
+                </a>
+            </li>
+            
+            <li>
+                <a href="#"
+                    class="block font-semibold py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
+                    Contact Us
+                </a>
+            </li>
+
+            <li class="group">
+                <a href="contact.php"
+                    class="block font-semibold py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
+                    Join Us
+                    <i class="fa-solid fa-chevron-down group-hover:-rotate-180 duration-300"></i>
+                </a>
+                <ul class="absolute hidden w-40 leading-8 border-danger-light text-white font-semibold m-0 group-hover:block bg-red-700 duration-1000">
+                    <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300">
+                        <a href="#" class="pl-4">As Volunteer</a>
+                    </li>
+                    <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300">
+                        <a href="#" class="pl-4">As Member</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <i class="fa-solid fa-bars cursor-pointer mr-4"></i>
+    </div>
+</nav>
+
+<!-- Navbar Mobile -->
+<nav class="flex lg:hidden py-4" x-data="{showSidebar: false}">
+    <!-- Header -->
+    <div class="flex justify-between items-center px-8 w-full">
+        <img src="assets/imgs/logo.png" alt="" class="w-1/2">
+        <button @click="showSidebar = !showSidebar" class="text-xl md:text-2xl">
+            <i class="fas" :class="showSidebar ? 'fa-xmark' : 'fa-bars'"></i>
+        </button>
+    </div>
+
+    <!-- Nav -->
+    <div class="fixed top-0 bg-slate-100 text-slate-800 h-screen w-full md:w-1/2 z-50 duration-300"
+        :class="showSidebar ? 'left-0' : '-left-full'">
+        <button class="absolute right-4 top-4 px-4 bg-danger text-white" @click="showSidebar = false">
+            <i class="fas fa-xmark"></i>
+        </button>
+        <img src="assets/imgs/logo.png" alt="" class="py-3 px-8">
+        
+        <ul class="uppercase">                
+            <li>
+                <a href="about.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
+                    About Us
+                </a>
+            </li>
+            <li>
+                <a href="voulnteer.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
+                    Our Project
+                </a>
+            </li>
+            <li>
+                <a href="contact.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
+                    Causes
+                </a>
+            </li>
+            <li>
+                <a href="#" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
+                    Case Story
+                </a>
+            </li>
+            <li>
+                <a href="#" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
+                    Contact Us
+                </a>
+            </li>
+            <li>
+                <a href="#" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
+                    Join
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Donate Us -->
+<section class="px-6 lg:px-14 mb-6">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <a href="#donate" class="text-white" >
+            <img src="assets/imgs/images-1.jpg" class="w-full" alt="">
+
+            <div class="text-center py-6" style="background-image: url('assets/imgs/donate-us-card-img.jpg');">
+                <h2 class="text-lg lg:text-4xl font-bold" >
+                    ₹100
+                </h2>
+                <p class="text-sm lg:text-xl font-semibold" >
+                    Provide Shelter For Children
+                </p>
+            </div>
+            
+        </a>
+
+        <a href="#donate" class="text-white" >
+            <img src="assets/imgs/images2.jpg" class="w-full" alt="">
+
+            <div class="text-center py-6" style="background-image: url('assets/imgs/donate-us-card-img.jpg');">
+                <h2 class="text-lg lg:text-4xl font-bold" >
+                    ₹200
+                </h2>
+                <p class="text-sm lg:text-xl font-semibold" >
+                    Provide the Education
+                </p>
+            </div>
+            
+        </a>
+
+        <a href="#donate" class="text-white" >
+            <img src="assets/imgs/bag2.jpeg" class="w-full" alt="">
+
+            <div class="text-center py-6" style="background-image: url('assets/imgs/donate-us-card-img.jpg');">
+                <h2 class="text-lg lg:text-4xl font-bold" >
+                    ₹300
+                </h2>
+                <p class="text-sm lg:text-xl font-semibold" >
+                    Provide Domestic Uses
+                </p>
+            </div>
+            
+        </a>
+
+    </div>
+
+    <div class="bg-orange-500/70 py-6" id="donate" >
+        <form action="#">
+            <div class="flex flex-col lg:flex-row items-center gap-4 justify-center">
+                <label for="amount" class="text-xl font-bold ">Donate Custom Amount </label>
+                <div class="flex items-center" >
+                    <span class="text-3xl mx-2 ">₹</span>
+                    <input type="number" aria-valuemin="1" min="1" max="100000" inputmode="numeric" placeholder="Other" name="amount" class="p-2 w-[200px] placeholder:font-bold outline-none">
+                </div>
+                <button type="submit" class="font-semibold bg-danger-light text-white p-2 px-4">
+                    Donate know
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- about us -->
+<section class="px-4 lg:px-14 py-16">
+    <div class=" grid lg:grid-cols-2 gap-4 bg-orange-300 ">
+        <div class="text-center lg:text-start p-6">
+            <span class="font-bold uppercase text-amber-950 ms-2">our vision</span>
+            <h1 class="text-5xl font-bold my-5 font-playfair tracking-wide">Finding Solutions Together</h1>
+            <p class="text-slate-700 text-lg mb-10">
+                When creating an NGO vision Focus on sharing goals like empowerment, education, health, and sustainability in a fresh way. Always give credit for quotes or ideas from others to respect their work. This helps clearly communicate your vision and builds a culture of creativity and trust, making your NGO more credible in the community.
+            </p>
+            <a href="#" class="py-4 px-8 bg-danger-light text-white font-semibold duration-300 hover:bg-warning-light">
+                Our Vision
+            </a>
+        </div>
+
+        <div>
+            <img src="assets/imgs/children2.jpeg" alt="" class="w-full h-full lg:h-[450px] object-cover">
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-danger py-16 px-6 lg:px-14">
+    <div class="grid md:col-span-2 lg:grid-cols-4 gap-5">
+        <div>
+            <img src="assets/imgs/logo3.png" alt="" class="h-[100px] mb-4" >
+            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="text-slate-200">
+            <h5 class="text-2xl font-semibold mb-4 text-white">Contact Us</h5>
+            <ul class="leading-8">
+            <li>
+                <i class="fa-solid fa-location-dot"></i>
+                RZA-1/7, First Floor. Ploat No-15, Dwarkapuri, New Delhi 110019
+            </li>
+            <li>
+                <i class="fa-solid fa-phone"></i>
+                9565162223/7887270564
+            </li>
+            <li>
+                <i class="fa-solid fa-envelope"></i>
+                manavyogmanch2005@gmail.com
+            </li>
+            </ul>
+        </div>
+
+        <div class="text-slate-200">
+            <h5 class="text-2xl font-semibold text-white mb-4">Social Media</h5>
+            <ul>
+              <div class="flex gap-5 mb-4">
+              <a href="#">
+                  <i class="fa-brands fa-facebook-f p-4 w-px h-px flex justify-center items-center rounded-full border hover:bg-white hover:text-red-600 text-white duration-500"></i>
+              </a>
+              <a href="#">
+                  <i class="fa-brands fa-instagram p-4 w-px h-px flex justify-center items-center rounded-full border hover:bg-white hover:text-red-600 text-white duration-500"></i>
+              </a>
+              <a href="#">
+                  <i class="fa-brands fa-x-twitter p-4 w-px h-px flex justify-center items-center rounded-full border hover:bg-white hover:text-red-600 text-white duration-500"></i>
+              </a>
+              </div>
+              
+            </ul>
+        </div>
+
+        <div class="text-slate-200 leading-6">
+            <h5 class="text-2xl font-semibold text-white mb-4">Newsletter</h5>
+            <p class="mb-2" >Stay up to date with our latest news and updates.</p>
+            <form class="flex h-10">
+                    <input type="email" class="w-1/2 py-2 px-4 text-sm bg-danger-dark rounded-l outline-none border-2 border-white " placeholder="Your Email Address">
+                    <button class="py-2 px-4 bg-white inline-block duration-500 text-danger-dark font-bold rounded-r">
+                        Contact Us
+                    </button>
+
+            </form>
+        </div>
+    </div>
+</footer>
+
+<!-- Footer Bottom -->
+<div class="border-t border-gray-400 bg-danger-dark py-5">
+    <div class="conatainer mx-auto px-5 lg:px-10 text-white">
+        <div class="lg:grid grid-cols-3">
+            <div class="col-span-1">
+                <p class="text-base font-semibold">
+                    Copyright &copy; 2024 - 2025! All Rights Reserved.
+                </p>
+            </div>
+            <div class="col-span-1 flex justify-center">
+                <img src="assets/imgs/logo-w.png" alt="">
+            </div>
+            <div class="col-span-1 text-end text-base font-semibold">
+                Made with <i class="fas fa-heart text-red-500"></i> by <a href="#">SpreadMyBusiness</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Alpine -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.14.1/cdn.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Custom JS -->
+<script src="assets/js/main.js"></script>
+<script>
+    function handleScroll() {
+            const currentScroll = window.scrollY;
+            this.navbarvisible = currentScroll < this.lastScrollTop || currentScroll === 0;
+            this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+        }
+</script>
+</body>
+</html>

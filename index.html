@@ -15,101 +15,77 @@
 </head>
 <body>
 <!-- Topbar -->
-<!-- <header class="hidden lg:block px-6 lg:px-14 bg-danger-light py-1 ">
-    <div class="flex justify-between items-center">
-        <div class="flex gap-5 text-white text-sm">
-            <div class="flex items-center gap-2">
-                <i class="fa-solid fa-location-dot"></i>
-                256 B Street 45 Newyork, Newyork
-            </div>    
-            <div class="flex items-center gap-2">
-                <i class="fa-solid fa-phone"></i>
-                +91 9565 162223
-            </div>    
-        </div>
-        <div class="flex gap-5 mb-4">
-            <a href="#">
-                <i class="fa-brands fa-facebook-f p-3 text-sm w-px h-px flex justify-center items-center rounded-full border hover:bg-white hover:text-red-600 text-white duration-500"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-instagram p-3 text-sm w-px h-px flex justify-center items-center rounded-full border hover:bg-white hover:text-red-600 text-white duration-500"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-x-twitter p-3 text-sm w-px h-px flex justify-center items-center rounded-full border hover:bg-white hover:text-red-600 text-white duration-500"></i>
-            </a>
-        </div>
-    </div>
-</header> -->
-
-<!-- logo -->
 <header class="px-6 lg:px-14 lg:block hidden">
-    <div class="flex justify-between items-center border-b">
-        <img src="assets/imgs/logo.png" alt="" class="w-[150px]" >
+    <div class="flex justify-between items-center">
+        <a href="index.html">
+            <img src="assets/imgs/logo-demo.png" alt="" class="w-[200px] ">
+        </a>
 
-        <div class="flex items-center gap-4">
-            <i class="fa-solid fa-phone text-3xl text-danger-light"></i>
-            <div>
-                Call Us
-                <div class="block">
-                    +91 99991 24223
+        <div class="flex gap-20">
+            <div class="flex items-center gap-4">
+                <i class="fa-solid fa-phone text-3xl text-danger-light"></i>
+                <div>
+                    Call Us
+                    <div class="block">
+                        (+91) 9565-16223
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="flex items-center gap-4">
-            <i class="fa-solid fa-envelope text-3xl text-danger-light"></i>
-            <div>
-                Mail Us
-                <div class="block">
-                    www.jjowfoundation.org
+    
+            <div class="flex items-center gap-4">
+                <i class="fa-solid fa-envelope text-3xl text-danger-light"></i>
+                <div>
+                    Mail Us
+                    <div class="block">
+                        manavyogmanch@gmail.com
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <button class="border bg-success-dark text-white font-bold py-2 px-6 rounded text-lg hover:bg-red-900 duration-500">
-            <a href="donate.html">
+    
+            <a href="donate.html" class="border bg-orange-500 text-white font-bold py-2  gap-1 items-center px-4 rounded text-lg hover:bg-success-dark duration-500">
+                <i class="fa-solid fa-indian-rupee-sign"></i>
                 Donate Us
             </a>
-        </button>
+        </div>
     </div>
 </header>
 
 <!-- Navbar -->
-<nav class="hidden lg:block px-6 lg:px-14 sticky bg-danger-light top-0 z-20 mb-2">
+<nav class="hidden lg:block px-6 lg:px-14 sticky bg-gradient-to-r to-danger-light from-yellow-600 top-0 z-20 mb-6">
     <div class="hidden lg:flex justify-between text-white items-center relative">
         <ul class="flex gap-6">
             <li>
                 <a href="#"
-                    class="block font-semibold py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
+                    class="block font-semibold text-sm uppercase py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
                     Home
                 </a>
             </li>
 
             <li class="group">
-                <a href="about.php"
-                    class="block font-semibold py-3 px-4 group border-slate-400 duration-300 hover:text-red-200  ">
+                <a href="#"
+                    class="block font-semibold text-sm uppercase py-3 px-4 group border-slate-400 duration-300 hover:text-red-200  ">
                     About Us
                     <i class="fa-solid fa-chevron-down group-hover:-rotate-180 duration-300"></i>
                 </a>
-                <ul class="absolute hidden w-40 leading-8 border-danger-light text-white font-semibold m-0 group-hover:block bg-red-700 duration-1000">
+                <ul class="absolute hidden w-40 leading-8 border-danger-light text-white font-semibold m-0 group-hover:block bg-dark text-sm uppercase duration-1000">
                     <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300">
-                        <a href="#" class="pl-4">History</a>
+                        <a href="#" class="block pl-4 py-3 text-xs">History</a>
                     </li>
-                    <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300" >
-                        <a href="#" class="pl-4">About</a>
+                    <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300">
+                        <a href="#" class="block pl-4 py-3 text-xs">About Us</a>
                     </li>
-                    <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300" >
-                        <a href="#" class="pl-4">Mission</a>
+                    <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300">
+                        <a href="#" class="block pl-4 py-3 text-xs">Mission</a>
                     </li>
-                    <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300" >
-                        <a href="#" class="pl-4">Vision</a>
+                    <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300">
+                        <a href="#" class="block pl-4 py-3 text-xs">Vision</a>
                     </li>
                 </ul>
             </li>
 
             <li class="group">
                 <a href="#"
-                    class="block font-semibold py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
+                    class="block font-semibold text-sm uppercase py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
                     Our Projects
                 </a>
                 
@@ -118,20 +94,21 @@
             
             <li>
                 <a href="voulnteer.php"
-                    class="block font-semibold py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
+                    class="block font-semibold text-sm uppercase py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
                     Causes
                 </a>
             </li>
 
             <li>
                 <a href="#"
-                    class="block font-semibold py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
+                    class="block font-semibold text-sm uppercase py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
                     Case Story
                 </a>
             </li>
+
             <li>
                 <a href="#"
-                    class="block font-semibold py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
+                    class="block font-semibold text-sm uppercase py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
                     Contact Us
                 </a>
             </li>
@@ -140,18 +117,65 @@
                 <a href="contact.php"
                     class="block font-semibold py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
                     Join Us
-                    <i class="fa-solid fa-chevron-down group-hover:-rotate-180 duration-300"></i>
+                    <i class="fa-solid fa-chevron-down group-hover:-rotate-180 duration-300 ml-2 text-xs"></i>
                 </a>
-                <ul class="absolute hidden w-40 leading-8 border-danger-light text-white font-semibold m-0 group-hover:block bg-red-700 duration-1000">
+                <ul class="absolute hidden w-40 leading-8 border-danger-light text-white font-semibold m-0 group-hover:block bg-dark text-sm uppercase duration-1000">
                     <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300">
-                        <a href="#" class="pl-4">As Volunteer</a>
+                        <a href="#" class="block pl-4 py-3 text-xs">As Volunteer</a>
                     </li>
                     <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300">
-                        <a href="#" class="pl-4">As Member</a>
+                        <a href="#" class="block pl-4 py-3 text-xs">As Member</a>
                     </li>
                 </ul>
             </li>
+
         </ul>
+        <!-- <div x-data="{showSidebar: false}" class="flex items-center">
+            <button
+                @click="showSidebar = !showSidebar"
+            >
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="fixed bg-slate-300 top-0 w-1/4 h-screen duration-500"
+                    :class="showSidebar ? 'right-0' : '-right-full'"
+            >
+                <button 
+                @click="showSidebar = !showSidebar"
+                class="px-3 bg-danger text-slate-100 absolute right-2 top-2">
+                    <i class="fas fa-x fa-sm"></i>
+                </button>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
         <i class="fa-solid fa-bars cursor-pointer mr-4"></i>
     </div>
 </nav>
@@ -167,7 +191,7 @@
     </div>
 
     <!-- Nav -->
-    <div class="fixed top-0 bg-slate-100 text-slate-800 h-screen w-full md:w-1/2 z-50 duration-300"
+    <div class="fixed top-0 bg-white text-slate-800 h-screen w-full md:w-1/2 z-50 duration-300"
         :class="showSidebar ? 'left-0' : '-left-full'">
         <button class="absolute right-4 top-4 px-4 bg-danger text-white" @click="showSidebar = false">
             <i class="fas fa-xmark"></i>
@@ -176,7 +200,7 @@
         
         <ul class="uppercase">                
             <li>
-                <a href="about.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
+                <a href="index.html" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
                     Home
                 </a>
             </li>
@@ -186,12 +210,12 @@
                 </a>
             </li>
             <li>
-                <a href="voulnteer.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
+                <a href="#" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
                     Our Project
                 </a>
             </li>
             <li>
-                <a href="contact.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
+                <a href="#" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
                     Causes
                 </a>
             </li>
@@ -220,16 +244,16 @@
 </nav>
 
 <!-- banner -->
-<section class="px-6 lg:px-14  ">
+<section class="px-6 lg:px-14 mb-8 overflow-hidden ">
     <div class="grid grid-cols-1 lg:grid-cols-6 lg:gap-2">
         <div class="col-span-4 h-[600px] relative mb-4 lg:mb-0">
-            <img src="assets/imgs/banner.jpg" alt="" class="w-full h-full object-cover lg:rounded-l brightness-90">
+            <img src="assets/imgs/manav-yog-manch-banner1.jpg" alt="" class="w-full h-full object-cover lg:rounded-l brightness-90">
             <div class="absolute top-10 px-6">
                 <p class="text-2xl text-white font-semibold">
                     Child Crutely and Neglect Crimes Continue to Rise Every Year
                 </p>
                 <p class="text-slate-200">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Poor children often struggle to get a good education, which limits their future opportunities and dreams.
                 </p>
             </div>
             <div class="absolute bottom-10 px-6">
@@ -244,24 +268,24 @@
 
         <div class="col-span-2 grid-rows-2 h-[600px] w-full lg:gap-2 lg:block">
             <div class="relative h-[300px] w-full mb-2">
-                <img src="assets/imgs/banner2.jpeg" alt="" class="w-full h-full object-cover lg:rounded-r brightness-50">
+                <img src="assets/imgs/manav-yog-manch-banner2.jpeg" alt="" class="w-full h-full object-cover lg:rounded-r brightness-50">
                 <div class="absolute bottom-5 px-6">
                     <p class="text-xl text-white font-semibold">
                         Make Childrens Happy
                     </p>
                     <p class="text-slate-200 text-sm">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Every child should have a chance to grow and dream.
                     </p>
                 </div>
             </div>
             <div class="relative h-[300px] w-full">
-                <img src="assets/imgs/banner3.jpg" alt="" class="w-full h-full object-cover lg:rounded-r brightness-50">
+                <img src="assets/imgs/manav-yog-manch-banner3.jpg" alt="" class="w-full h-full object-cover lg:rounded-r brightness-50">
                 <div class="absolute bottom-5 px-6">
                     <p class="text-xl text-white font-semibold">
                         Make Childrens Happy
                     </p>
                     <p class="text-slate-200 text-sm">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Many of them do not have enough healthy food to eat, affecting their growth and energy levels.
                     </p>
                 </div>
             </div>
@@ -270,125 +294,134 @@
 </section>
 
 <!-- Events sections -->
-<section class=" grid lg:grid-cols-8 md:grid-cols-1  gap-5 bg-slate-400  px-6 lg:px-14  mb-8 py-10">
+<section class=" grid lg:grid-cols-8 md:grid-cols-1 lg:gap-5 bg-slate-100  px-6 lg:px-14  mb-8 py-10">
     <div class="lg:col-span-2">
-        <div class="bg-white rounded-lg shadow-lg px-6 py-2 space-y-5">
-            <h1 class="font-bold text-lg text-red-700">Recent Event</h1>
-            <span class="bg-slate-200 w-full h-[2px] block"></span>
-            <span class="bg-slate-200 w-full h-[2px] block"></span>
-            <h6 class="font-bold text-sm text-red-700">Donate to Others for Self</h6>
-            <p class="text-gray-500">Lorem Ipsum is simply dummy text <br> of the printing and giones  typesetting <br> industry. Lorem Ipsum has been the
+        <div class="bg-white rounded-lg shadow-lg p-4 mb-6">
+            <h1 class="font-semibold text-lg text-red-700 m-0">Vision</h1>
+            <span class="bg-slate-300 w-full h-px block my-2"></span>
+            <h6 class="font-semibold mb-2 text-danger-light">Donate to Others for Self</h6>
+            <p class="text-gray-500 text-sm">
+                Our NGO visions a future where everyone has access to education, healthcare, and livelihoods, empowering communities to thrive together and ensuring no one is left behind.
             </p>
         </div>
-        <div class="bg-white rounded-lg shadow-lg px-6 py-2 space-y-5 my-8">
-            <h1 class="font-bold text-lg text-red-700">Members</h1>
-            <span class="bg-slate-200 w-full h-[2px] block"></span>
+
+        <div class="bg-white rounded-lg shadow-lg px-6 py-2 ">
+            <h1 class="font-semibold text-lg text-red-700">Members</h1>
+            <span class="bg-slate-300 w-full h-px block my-2"></span>
             <div>
                 <div class="flex items-center gap-5 py-2">
-                    <img src="assets/imgs/1 (1).jpeg" alt="" class="rounded-full h-20 w-20 ">
+                    <img src="assets/imgs/manav-yog-manch-member.jpeg" alt="" class="rounded-full h-20 w-20 ">
                     <div>
-                        <h1 class="font-bold text-sm  text-red-700">Vishwajeet Nath</h1>
-                        <p class="text-gray-500">Volunteers Manager</p>
+                        <h1 class="font-semibold text-lg text-red-700">Vishwajeet Nath</h1>
+                        <p class="text-gray-500 text-sm">Volunteers Manager</p>
                     </div>
                 </div>
-                <span class="bg-slate-200 w-full h-[2px] block"></span>
+                <span class="bg-slate-300 w-full h-px block my-2"></span>
             </div>
             
             <div>
                 <div class="flex items-center py-2 gap-5">
-                    <img src="assets/imgs/3.jpg" alt="" class="rounded-full w-20 h-20">
+                    <img src="assets/imgs/manav-yog-manch-members.jpg" alt="" class="rounded-full w-20 h-20">
                     <div>
-                        <h1 class="font-bold text-sm text-red-700">Rampratap Mahant Amar Nath</h1>
-                        <p class="text-gray-500">Volunteers Manager</p>
+                        <h1 class="font-semibold text-lg text-red-700">Rampratap Nath</h1>
+                        <p class="text-gray-500 text-sm">Volunteers Manager</p>
                     </div>
                 </div>
-                <span class="bg-slate-200 w-full h-[2px] block"></span>
             </div>
            
         </div>
     </div>
     <div class="lg:col-span-4">
         <div class="bg-white rounded-lg shadow-lg p-6 space-y-5">
+
             <div class="flex gap-5 ">
-                <h1 class="font-bold text-lg text-red-700">News feed </h1>
+                <h1 class="font-semibold text-xl text-red-700">What We Do?</h1>
             </div>
-            <div class="bg-slate-200 w-full h-1">
-                <div class="bg-red-700 w-24 h-1"></div>
+            <div class="bg-slate-200 w-full h-px">
+                <div class="bg-red-700 w-24 h-px"></div>
             </div>
-            <img src="assets/imgs/banner1.jpg" alt="" class="w-full">
+            <img src="assets/imgs/manav-yog-manch-banner1.jpg" alt="" class="w-full object-cover">
             
-            <div>
+            <div>   
                 <div class="flex gap-5 mb-4">
-                    <img src="assets/imgs/section1.jpg" alt="" class="w-36 shrink-0">
+                    <img src="assets/imgs/manav-yog-manch-distribute-bags.jpeg" alt="" class="w-36 shrink-0">
                     <div>
-                        <h1 class="font-bold text-lg text-red-700">FREE SCHOOL BAG DISTRIBUTION</h1>
-                        <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                        <h1 class="font-semibold text-lg text-red-700">FREE SCHOOL BAG DISTRIBUTION</h1>
+                        <p class="text-gray-500 text-sm">
+                            We give free school bags to children in need, helping them carry their books and supplies for school.
+                        </p>
                     </div>
                 </div>
                 <div class="text-center ">
-                    <span class="bg-slate-200 w-full h-[2px] block"></span>
+                    <span class="bg-slate-200 w-full h-px block"></span>
                 </div>
             </div>
+
             <div>
                 <div class="flex gap-5 mb-4">
-                    <img src="assets/imgs/WhatsApp Image 2024-09-10 at 8.02.19 AM (1).jpeg" alt="" class="w-36">
+                    <img src="assets/imgs/manav-yog-manch-provide-education.jpeg" alt="" class="w-36">
                     <div>
-                        <h1 class="font-bold text-lg text-red-700">FREE EDUCATION PROVIDE</h1>
-                        <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                        <h1 class="font-semibold text-lg text-red-700">FREE EDUCATION PROVIDE</h1>
+                        <p class="text-gray-500 text-sm">
+                            We offer quality education and resources to help children follow their dreams and escape poverty.
+                        </p>
                     </div>
                 </div>
                 <div class="text-center">
-                    <span class="bg-slate-200 w-full h-[2px] block"></span>
+                    <span class="bg-slate-200 w-full h-px block"></span>
                 </div>
             </div>
+
             <div>
                 <div class="flex gap-5 mb-4">
-                    <img src="assets/imgs/section2.jpg" alt="" class="w-36">
+                    <img src="assets/imgs/manav-yog-manch-distribute-food.jpeg" alt="" class="w-36">
                     <div>
-                        <h1 class="font-bold text-lg text-red-700">FREE MID-DAY MEAL DISTRIBUTION</h1>
-                        <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                        <h1 class="font-semibold text-lg text-red-700">FREE MID-DAY MEAL DISTRIBUTION</h1>
+                        <p class="text-gray-500 text-sm">
+                            Our program ensures every child gets a healthy meal at school to stay focused and attend regularly.
+                        </p>
                     </div>
                 </div>
                 <div class="text-center">
-                    <span class="bg-slate-200 w-full h-[2px] block"></span>
+                    <span class="bg-slate-200 w-full h-px block"></span>
                 </div>
             </div>
             <div>
-                <div class="flex gap-5 mb-4">
-                    <img src="assets/imgs/section3.jpg" alt="" class="w-36">
+                <div class="flex gap-5">
+                    <img src="assets/imgs/manav-yog-manch-distribute-mask.jpeg" alt="" class="w-36">
                     <div>
-                        <h1 class="font-bold text-lg text-red-700">FREE MASK AND SANIZER COVID 19</h1>
-                        <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                        <h1 class="font-semibold text-lg text-red-700">FREE MASK AND SANIZER COVID 19</h1>
+                        <p class="text-gray-500 text-sm">
+                            We give masks to keep children safe and teach them about hygiene.
+                        </p>
                     </div>
-                </div>
-                <div class="text-center">
-                    <span class="bg-slate-200 w-full h-[2px] block"></span>
                 </div>
             </div>
            
         </div>
     </div>
     <div class="lg:col-span-2">
-        <div class="bg-white rounded-lg shadow-lg px-6 py-2 space-y-5 capitalize">
-            <h1 class="font-bold text-lg text-red-700">You’ve Helped Rais</h1>
-            <span></span>
-            <p class="text-gray-500">Nisl tincidunt eget nullam non nisi est sit amet facilisis.</p>
+        <div class="bg-white rounded-lg shadow-lg capitalize p-4">
+            <h1 class="font-semibold text-lg text-red-700">Empowering Lives Through Education</h1>
+            <span class="bg-slate-300 w-full h-px block my-2"></span>
+            <p class="text-gray-500 mb-4 text-sm">We offer quality education and resources to help children.</p>
             
-            <button class="bg-red-700 text-white font-extrabold h-10 rounded w-full">Donate Now</button>
+            <a href="donate.html" class="bg-red-700 block text-center text-white font-semibold px-6 py-2 rounded w-full">Donate Now</a>
         </div>
-        <div class="bg-white rounded-lg my-8 shadow-lg px-6 py-2 space-y-5">
+
+        <div class="bg-white rounded-lg my-8 shadow-lg p-4 space-y-4">
  
             <div class="grid grid-cols-2 gap-5">
                 <img src="assets/imgs/children.jpeg" alt="" class="w-full object-cover lg:object-fill h-[100px] rounded">
                 <div>
-                    <h1 class="font-bold text-sm text-red-700">Provide Education</h1>
-                    <p class="text-gray-500">April 3,2020</p>
+                    <h1 class="font-bold text-red-700">Provide Education</h1>
+                    <p class="text-gray-500 text-sm">Everyone Can Access Education</p>
                 </div>
                 
             </div>
 
             <div class="text-center">
-                <span class="bg-slate-200 w-full h-[2px] block"></span>
+                <span class="bg-slate-300 w-full h-px block"></span>
             </div>
 
 
@@ -396,55 +429,55 @@
                 <img src="assets/imgs/children1.jpeg" alt="" class="w-full h-[100px] object-cover lg:object-fill rounded">
                 <div>
                     <h1 class="font-bold text-sm text-red-700">Distribute Books</h1>
-                    <p class="text-gray-500">April 3,2020</p>
+                    <p class="text-gray-500 text-sm">Everyone Can Gain Knowledge</p>
                 </div>
             </div>
 
             <div class="text-center">
-                <span class="bg-slate-200 w-full h-[2px] block"></span>
+                <span class="bg-slate-300 w-full h-[2px] block"></span>
             </div>
 
             <div class="grid grid-cols-2 gap-5">
                 <img src="assets/imgs/children2.jpeg" alt="" class="w-full h-[100px] object-cover lg:object-fill rounded">
                 <div>
                     <h1 class="font-bold text-sm text-red-700">Provide Food</h1>
-                    <p class="text-gray-500">April 3,2020</p>
+                    <p class="text-gray-500 text-sm">No One Can Sleep Without Eating Food</p>
                 </div>
             </div>
 
             <div class="text-center">
-                <span class="bg-slate-200 w-full h-[2px] block"></span>
+                <span class="bg-slate-300 w-full h-[2px] block"></span>
             </div>
 
             <div class="grid grid-cols-2 gap-5">
                 <img src="assets/imgs/work.jpeg" alt="" class="w-full h-[100px] object-cover lg:object-fill rounded">
                 <div>
                     <h1 class="font-bold text-sm text-red-700">Distribute Senitizer Mask</h1>
-                    <p class="text-gray-500">April 3,2020</p>
+                    <p class="text-gray-500 text-sm">Take Care of Poor Children Medical Hygiene</p>
                 </div>
             </div>
 
             <div class="text-center">
-                <span class="bg-slate-200 w-full h-[2px] block"></span>
+                <span class="bg-slate-300 w-full h-[2px] block"></span>
             </div>
 
             <div class="grid grid-cols-2 gap-5">
                 <img src="assets/imgs/bag.jpeg" alt="" class="w-full h-[100px] object-cover lg:object-fill rounded">
                 <div>
                     <h1 class="font-bold text-sm text-red-700">Distribute School Bags</h1>
-                    <p class="text-gray-500">April 3,2020</p>
+                    <p class="text-gray-500 text-sm">Take Care of Domestic Goods</p>
                 </div>
             </div>
 
             <div class="text-center">
-                <span class="bg-slate-200 w-full h-[2px] block"></span>
+                <span class="bg-slate-300 w-full h-[2px] block"></span>
             </div>
 
             <div class="grid grid-cols-2 gap-5">
-                <img src="assets/imgs/bag2.jpeg" alt="" class="w-full h-[100px] object-cover lg:object-fill rounded">
+                <img src="assets/imgs/manav-yog-manch-provide-education.jpeg" alt="" class="w-full h-[100px] object-cover lg:object-fill rounded">
                 <div>
                     <h1 class="font-bold text-sm text-red-700">Helping hand for Education</h1>
-                    <p class="text-gray-500">April 3,2020</p>
+                    <p class="text-gray-500 text-sm">Everyone Can Gain Knowledge</p>
                 </div>
             </div>
            
@@ -465,9 +498,9 @@
         </h2>
         <div class="owl-carousel testimonial-carousel mb-8">
             <div>
-                <p class="text-xl mb-8 text-slate-500" >
+                <p class="text-sm mb-8 text-slate-500" >
                     <i class="fa-solid fa-quote-left"></i>
-                    Creativiteit, velen praten erover en menen alles erover te weten, maar het is maar weinigen echt gegeven. Al heel wat jaren werken wij samen met.
+                    I volunteered with this NGO, and it was an inspiring experience. Their dedication to education and community empowerment truly makes a difference. The passionate team left me feeling motivated about the impact we can create together!
                     <i class="fa-solid fa-quote-right"></i>
                 </p>
                 <h2 class="text-2xl font-semibold ">
@@ -478,43 +511,17 @@
                 </span>
             </div>
     
-            <div>
-                <p class="text-xl text-gray-500 mb-8" >
-                    <i class="fa-solid fa-quote-left"></i>
-                    Creativiteit, velen praten erover en menen alles erover te weten, maar het is maar weinigen echt gegeven. Al heel wat jaren werken wij samen met.
-                    <i class="fa-solid fa-quote-right"></i>
-                </p>
-                <h2 class="text-2xl font-semibold ">
-                    Kritika Upadhay
-                </h2>
-                <span class="text-slate-500">
-                    charity volunteering Delhi
-                </span>
-            </div>
-    
-            <div>
-                <p class="text-xl mb-8 text-gray-500">
-                    <i class="fa-solid fa-quote-left"></i>
-                    Creativiteit, velen praten erover en menen alles erover te weten, maar het is maar weinigen echt gegeven. Al heel wat jaren werken wij samen met.
-                    <i class="fa-solid fa-quote-right"></i>
-                </p>
-                <h2 class="text-2xl font-semibold ">
-                    Kritika Upadhay
-                </h2>
-                <span class="text-slate-500">
-                    charity volunteering Delhi
-                </span>
-            </div>
+           
         </div>
     
-        <a href="#" class="border text-xl px-6 py-2 bg-danger-light text-white hover:bg-red-700 duration-800 group duration-500">
+        <a href="donate.html" class="border text-xl px-6 py-2 bg-danger-light text-white hover:bg-red-700 duration-800 group duration-500">
             Donate Us 
             <i class="fa-solid fa-arrow-right ml-2 -rotate-45 group-hover:rotate-0 duration-500"></i>
         </a>
     </div>
 
+    <!-- Dekstop carousel -->
     <div class="grid grid-cols-1 lg:grid-cols-2">
-        <!-- Dekstop carousel -->
         <div class="p-4 hidden lg:block">
 
             <h2 class="text-4xl font-bold mb-8 text-red-700">
@@ -522,9 +529,9 @@
             </h2>
             <div class="owl-carousel testimonial-carousel mb-8">
                 <div>
-                    <p class="text-xl text-gray-500 mb-8" >
+                    <p class="text-gray-500 mb-8" >
                         <i class="fa-solid fa-quote-left"></i>
-                        Creativiteit, velen praten erover en menen alles erover te weten, maar het is maar weinigen echt gegeven. Al heel wat jaren werken wij samen met.
+                            I volunteered with this NGO, and it was an inspiring experience. Their dedication to education and community empowerment truly makes a difference. The passionate team left me feeling motivated about the impact we can create together!
                         <i class="fa-solid fa-quote-right"></i>
                     </p>
                     <h2 class="text-2xl font-semibold ">
@@ -536,9 +543,9 @@
                 </div>
     
                 <div>
-                    <p class="text-xl text-gray-500 mb-8" >
+                    <p class="text-gray-500 mb-8" >
                         <i class="fa-solid fa-quote-left"></i>
-                        Creativiteit, velen praten erover en menen alles erover te weten, maar het is maar weinigen echt gegeven. Al heel wat jaren werken wij samen met.
+                            I volunteered with this NGO, and it was an inspiring experience. Their dedication to education and community empowerment truly makes a difference. The passionate team left me feeling motivated about the impact we can create together!
                         <i class="fa-solid fa-quote-right"></i>
                     </p>
                     <h2 class="text-2xl font-semibold ">
@@ -550,9 +557,9 @@
                 </div>
 
                 <div>
-                    <p class="text-xl text-gray-500 mb-8" >
+                    <p class="text-gray-500 mb-8" >
                         <i class="fa-solid fa-quote-left"></i>
-                        Creativiteit, velen praten erover en menen alles erover te weten, maar het is maar weinigen echt gegeven. Al heel wat jaren werken wij samen met.
+                            I volunteered with this NGO, and it was an inspiring experience. Their dedication to education and community empowerment truly makes a difference. The passionate team left me feeling motivated about the impact we can create together!
                         <i class="fa-solid fa-quote-right"></i>
                     </p>
                     <h2 class="text-2xl font-semibold ">
@@ -564,7 +571,7 @@
                 </div>
             </div>
 
-            <a href="#" class="border text-xl px-6 py-2 rounded font-bold bg-danger-light text-white hover:bg-red-700 duration-800 group duration-500">
+            <a href="donate.html" class="border text-xl px-6 py-2 rounded font-bold bg-danger-light text-white hover:bg-red-700 duration-800 group duration-500">
                 Donate Us 
                 <i class="fa-solid fa-arrow-right ml-2 -rotate-45 group-hover:rotate-0 duration-500"></i>
             </a>
@@ -583,8 +590,10 @@
 <footer class="bg-danger py-16 px-6 lg:px-14">
     <div class="grid md:col-span-2 lg:grid-cols-4 gap-5">
         <div>
-            <img src="assets/imgs/logo3.png" alt="" class="h-[100px] mb-4" >
-            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <img src="assets/imgs/logo3.png" alt="" class="h-[100px] mb-2" >
+            <p class="text-white">
+                Helping communities through education, health, and jobs at Manav Yog Manch.
+            </p>
         </div>
 
         <div class="text-slate-200">
@@ -625,10 +634,10 @@
 
         <div class="text-slate-200 leading-6">
             <h5 class="text-2xl font-semibold text-white mb-4">Newsletter</h5>
-            <p class="mb-2" >Stay up to date with our latest news and updates.</p>
+            <p class="mb-2" >Together, we can make a difference in the lives of children in need</p>
             <form class="flex h-10">
-                    <input type="email" class="w-1/2 py-2 px-4 text-sm bg-danger-dark rounded-l outline-none border-2 border-white " placeholder="Your Email Address">
-                    <button class="py-2 px-4 bg-white inline-block duration-500 text-danger-dark font-bold rounded-r">
+                    <input type="email" class="w-1/2 py-2 px-4 text-sm bg-danger-dark outline-none border-2 border-white " placeholder="Your Email">
+                    <button class="py-2 px-4 bg-white inline-block duration-500 text-danger-dark font-bold">
                         Contact Us
                     </button>
 

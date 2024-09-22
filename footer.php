@@ -33,7 +33,7 @@
         <div class="text-slate-200">
             <h5 class="text-2xl font-semibold text-white mb-4">Social Media</h5>
             <ul>
-              <div class="flex gap-5 mb-4 flex-col sm:flex-row">
+              <div class="flex gap-5 mb-4 ">
               <a href="#">
                   <i class="fa-brands fa-facebook-f p-4 w-px h-px flex justify-center items-center rounded-full border hover:bg-white hover:text-red-600 text-white duration-500"></i>
               </a>
@@ -63,17 +63,15 @@
 </footer>
 
 <!-- Footer Bottom -->
-<div class="border-t border-gray-400 bg-danger-dark py-5">
-    <div class="conatainer mx-auto px-5 lg:px-10 text-white">
-        <div class="lg:grid grid-cols-3">
-            <div class="col-span-1">
-                <p class="text-base font-semibold">
-                    Copyright &copy; 2024 - 2025! All Rights Reserved.
-                </p>
-            </div>
-            <div class="col-span-1 text-end text-base font-semibold">
-                Made with <i class="fas fa-heart text-red-500"></i> by <a href="#">SpreadMyBusiness</a>
-            </div>
+<div class="border-t border-gray-400 bg-danger-dark py-5 px-6 lg:px-14">
+    <div class="lg:grid grid-cols-2 text-white">
+        <div>
+            <p class="text-base font-semibold">
+                Copyright &copy; 2024 - 2025! All Rights Reserved.
+            </p>
+        </div>
+        <div class="text-base lg:text-end font-semibold">
+            Made with <i class="fas fa-heart text-red-500"></i> by <a href="https://spreadmycareer.in/">SpreadMyBusiness</a>
         </div>
     </div>
 </div>

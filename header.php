@@ -55,14 +55,14 @@
     <div class="hidden lg:flex justify-between text-white items-center relative">
         <ul class="flex gap-6 uppercase">
             <li>
-                <a href="#"
+                <a href="index.php"
                     class="block font-semibold text-sm uppercase py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
                     Home
                 </a>
             </li>
 
             <li class="group">
-                <a href="#"
+                <a href="about.php"
                     class="block text-sm font-semibold py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
                      About us
                     <i class="fa-solid fa-chevron-down group-hover:-rotate-180 duration-300 ml-2 text-xs"></i>
@@ -104,23 +104,23 @@
             </li>
 
             <li class="group">
-                <a href="#"
+                <a href="contact.php"
                     class="block text-sm font-semibold py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
                     Join Us
                     <i class="fa-solid fa-chevron-down group-hover:-rotate-180 duration-300 ml-2 text-xs"></i>
                 </a>
                 <ul class="absolute hidden w-40 leading-8 border-danger-light text-white font-semibold m-0 group-hover:block bg-dark text-sm uppercase duration-1000">
                     <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300">
-                        <a href="#" class="block pl-4 py-3 text-xs">As Volunteer</a>
+                        <a href="contact.php" class="block pl-4 py-3 text-xs">As Volunteer</a>
                     </li>
                     <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300">
-                        <a href="#" class="block pl-4 py-3 text-xs">As Member</a>
+                        <a href="contact.php" class="block pl-4 py-3 text-xs">As Member</a>
                     </li>
                 </ul>
             </li>
 
         </ul>
-        <div x-data="{showSidebar: true}" class="flex items-center">
+        <div x-data="{showSidebar: false}" class="flex items-center">
             <button
                 @click="showSidebar = !showSidebar"
             >
@@ -165,7 +165,7 @@
 <nav class="flex lg:hidden" x-data="{showSidebar: false}">
     <!-- Header -->
     <div class="flex justify-between items-center px-8 w-full">
-        <img src="assets/imgs/logo.png" alt="" class=" w-1/3">
+        <img src="assets/imgs/logo.png" alt="" class=" w-2/3">
         <button @click="showSidebar = !showSidebar" class="text-xl md:text-2xl">
             <i class="fas" :class="showSidebar ? 'fa-xmark' : 'fa-bars'"></i>
         </button>
@@ -186,7 +186,7 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
+                <a href="about.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
                     About Us
                 </a>
             </li>
@@ -207,12 +207,12 @@
                 </a>
             </li>
             <li>
-                <a href="contact.html" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
+                <a href="contact.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
                     Contact Us
                 </a>
             </li>
             <li>
-                <a href="#" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
+                <a href="contact.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
                     Join Us
                 </a>
             </li>

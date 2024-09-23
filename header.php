@@ -51,7 +51,7 @@
 </header>
 
 <!-- Navbar -->
-<nav class="hidden lg:block px-6 lg:px-14 sticky bg-gradient-to-r to-danger-light from-yellow-600 top-0 z-20 mb-6">
+<nav class="hidden lg:block px-6 lg:px-14 sticky bg-gradient-to-r to-danger-light from-yellow-600 top-0 z-20">
     <div class="hidden lg:flex justify-between text-white items-center relative">
         <ul class="flex gap-6 uppercase">
             <li>
@@ -69,19 +69,16 @@
                 </a>
                 <ul class="absolute hidden w-40 leading-8 border-danger-light text-white font-semibold m-0 group-hover:block bg-dark text-sm uppercase duration-1000">
                     <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300">
-                        <a href="#" class="block pl-4 py-3 text-xs">History</a>
+                        <a href="mission.php" class="block pl-4 py-3 text-xs">Mission</a>
                     </li>
                     <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300">
-                        <a href="#" class="block pl-4 py-3 text-xs">Mission</a>
-                    </li>
-                    <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300">
-                        <a href="#" class="block pl-4 py-3 text-xs">Vision</a>
+                        <a href="vision.php" class="block pl-4 py-3 text-xs">Vision</a>
                     </li>
                 </ul>
             </li>
 
             <li class="group">
-                <a href="#"
+                <a href="our-projects.php"
                     class="block font-semibold text-sm uppercase py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
                     Our Projects
                 </a>
@@ -104,17 +101,17 @@
             </li>
 
             <li class="group">
-                <a href="contact.php"
+                <a href="join-us.php"
                     class="block text-sm font-semibold py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
                     Join Us
                     <i class="fa-solid fa-chevron-down group-hover:-rotate-180 duration-300 ml-2 text-xs"></i>
                 </a>
                 <ul class="absolute hidden w-40 leading-8 border-danger-light text-white font-semibold m-0 group-hover:block bg-dark text-sm uppercase duration-1000">
                     <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300">
-                        <a href="contact.php" class="block pl-4 py-3 text-xs">As Volunteer</a>
+                        <a href="join-us.php?type=volunteer" class="block pl-4 py-3 text-xs">As Volunteer</a>
                     </li>
                     <li class="hover:bg-black font-semibold border-l-4 border-danger-light duration-300">
-                        <a href="contact.php" class="block pl-4 py-3 text-xs">As Member</a>
+                        <a href="join-us.php?type=member" class="block pl-4 py-3 text-xs">As Member</a>
                     </li>
                 </ul>
             </li>
@@ -191,13 +188,13 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
+                <a href="our-prjects.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
                     Our Project
                 </a>
             </li>
             
             <li>
-                <a href="#" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
+                <a href="gallery.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
                     gallery
                 </a>
             </li>
@@ -212,7 +209,7 @@
                 </a>
             </li>
             <li>
-                <a href="contact.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
+                <a href="join-us.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
                     Join Us
                 </a>
             </li>

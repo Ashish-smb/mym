@@ -1,4 +1,7 @@
-<?php include_once('header.php') ?>
+<?php include_once('inc/header.php');
+    $title = "What We’re Working On";
+    $subtitle = "Our projects aim to bring positive change and support to our community.";
+    include_once("inner-banner.php"); ?>
 <!-- projects -->
 <section class="px-4 lg:px-14 mb-8">
     <h2 class="text-4xl text-center mx-auto border-danger-light  border-b-2 font-semibold pb-4 mb-4 inline-block">
@@ -39,4 +42,4 @@
         </div>
     </div>
 </section>
-<?php include_once('footer.php') ?>
+<?php include_once('inc/footer.php') ?>

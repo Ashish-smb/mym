@@ -1,4 +1,7 @@
-<?php include_once('header.php') ?>
+<?php  include_once('inc/header.php');
+    $title = "Get to Know Us";
+    $subtitle = "We are a team dedicated to creating positive change in our community.";
+    include_once("inner-banner.php"); ?>
 <!-- about us -->
 <section class="px-6 lg:px-14 mb-4">
     <div class="grid lg:grid-cols-2 gap-12">
@@ -82,4 +85,4 @@
 </section>
 
 
-<?php include_once('footer.php') ?>
+<?php include_once('inc/footer.php');?>

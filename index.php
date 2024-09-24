@@ -1,4 +1,4 @@
-<?php include_once('header.php') ?>
+<?php include_once('inc/header.php');?>
 
 <!-- banner -->
 <section class="px-6 lg:px-14 mb-8 overflow-hidden ">
@@ -350,4 +350,4 @@
 
 </section>
 
-<?php include_once('footer.php') ?>
+<?php include_once('inc/footer.php');?>

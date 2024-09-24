@@ -87,7 +87,7 @@
             </li>
 
             <li>
-                <a href="#"
+                <a href="gallery.php"
                     class="block font-semibold text-sm uppercase py-3 px-4 border-slate-400 duration-300 hover:text-red-200">
                     Gallery
                 </a>
@@ -162,7 +162,7 @@
 <nav class="flex lg:hidden" x-data="{showSidebar: false}">
     <!-- Header -->
     <div class="flex justify-between items-center px-8 w-full">
-        <img src="assets/imgs/logo.png" alt="" class=" w-2/3">
+        <img src="assets/imgs/logo.png" alt="" class=" w-1/3">
         <button @click="showSidebar = !showSidebar" class="text-xl md:text-2xl">
             <i class="fas" :class="showSidebar ? 'fa-xmark' : 'fa-bars'"></i>
         </button>

@@ -1,4 +1,7 @@
-<?php include_once('header.php')?>
+<?php include_once('inc/header.php');
+    $title = "Get in Touch";
+    $subtitle = "We’re here to help. Reach out to us with your questions or ideas!";
+    include_once("inner-banner.php");?>
 
 <!-- contact us -->
 <section class="px-6 lg:px-14 mt-6 lg:mt-0 mb-5">
@@ -103,4 +106,4 @@
  referrerpolicy="no-referrer-when-downgrade">
 </iframe>
 
-<?php include_once('footer.php')?>
+<?php include_once('inc/footer.php')?>

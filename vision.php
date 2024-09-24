@@ -1,4 +1,7 @@
-<?php include_once('header.php') ?>
+<?php include_once('inc/header.php');
+    $title = "Our Goals for Tomorrow";
+    $subtitle = "Our vision is a world where everyone has the opportunity to thrive and succeed.";
+    include_once("inner-banner.php"); ?>
 
 <!-- Vision us -->
 <section class="px-4 lg:px-14 py-16">
@@ -20,4 +23,4 @@
     </div>
 </section>
 
-<?php include_once('footer.php') ?>
+<?php include_once('inc/footer.php') ?>

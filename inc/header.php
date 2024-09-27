@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
+<title>ManavYogManch</title>
 <!-- Owl Carousel -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
@@ -11,12 +11,18 @@
 <!-- Font Awesome 6.6.0 -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+<!-- fancy box -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"/>
+
+<!-- Lightbox2 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+
 <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 <!-- Topbar -->
 <header class="px-6 lg:px-14 lg:block hidden">
-    <div class="flex justify-between items-center">
+    <div class="flex justify-between items-center w-full">
         <a href="index.php">
             <img src="assets/imgs/logo-demo.png" alt="" class="w-[200px] ">
         </a>
@@ -117,13 +123,14 @@
             </li>
 
         </ul>
-        <div x-data="{showSidebar: false}" class="flex items-center">
+
+        <div x-data="{showSidebar: false}" class="flex items-center ">
             <button
                 @click="showSidebar = !showSidebar"
             >
                 <img src="assets/imgs/fonts/manav-yog-manch-sidebar.png" alt="" class="w-6">
             </button>
-            <div class="fixed bg-orange-900 top-0 w-1/4 p-4 h-screen duration-500"
+            <div class="fixed bg-slate-100 top-0 w-1/4 p-4 h-screen duration-500 shadow overflow-y-auto"
                     :class="showSidebar ? 'right-0' : '-right-full'"
             >
                 <button 
@@ -132,25 +139,7 @@
                     <i class="fas fa-x fa-sm"></i>
                 </button>
                 
-                
-                    <form action="index.php">
-                        <h2 class="text-2xl font-bold mb-3">Contact Us</h2>
-                        <hr class="w-full h-px bg-white my-6" >
-                        <div class="mb-3">
-                            <input type="text" placeholder="Enter Your Name" name="name" id="name" class="w-full p-2 outline-none text-black" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" placeholder="Enter Your Email" name="email" id="email" class="w-full p-2 outline-none text-black" required>
-                        </div>
-                        <div class="mb-3">
-                            <textarea name="query" id="query" placeholder="Enter Your Query" class="w-full p-2 outline-none text-black h-[150px]" required></textarea>
-                        </div>
-                        <button type="submit" class="bg-yellow-600 px-6 py-2 font-semibold" >
-                            Submit
-                        </button>
-                    </form>
-
-                
+                <?php  include('inc/sidebar.php') ?>
                 
             </div>
         </div>
@@ -187,17 +176,35 @@
                     About Us
                 </a>
             </li>
+
             <li>
-                <a href="our-prjects.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
-                    Our Project
+                <a href="vision.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
+                    vision
                 </a>
             </li>
+
             
+            
+            <li>
+                <a href="mission.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
+                    mission
+                </a>
+            </li>
+
             <li>
                 <a href="gallery.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
                     gallery
                 </a>
             </li>
+
+            <li>
+                <a href="our-projects.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
+                    Our Project
+                </a>
+            </li>
+            
+            
+           
             <li>
                 <a href="donate.php" class="block font-semibold py-3 px-8 border-b border-slate-200 hover:text-danger-light">
                     Donate us

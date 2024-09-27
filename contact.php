@@ -60,7 +60,7 @@
             <h1 class="text-5xl  font-bold">A Grateful Request for Your Support</h1>
         </div>
         <div class="col-span-1">
-            <p class="my-10 text-gray-400">
+            <p class="my-10 text-gray-600">
                 We shall feel most grateful your sweets self kindly donate some amount according to your sweets will either from your firms of trust. As we know you have great for humanity. Therefore we hope, you will consider our Request Sympathycally
             </p>
         </div>

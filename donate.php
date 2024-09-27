@@ -1,4 +1,4 @@
-<?php include_once('header.php')?>
+<?php include_once('inc/header.php')?>
 
 <!-- Donate Us -->
 <section class="px-6 lg:px-14 mb-6" x-data="{ donateAmount: undefined }">
@@ -90,7 +90,7 @@
         Our <span class="font-bold text-orange-500">Projects</span> 
     </h2>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="grid sm:grid-cols-2  lg:grid-cols-4 gap-6">
         <div class="text-center group border-2 border-danger-light  p-2 border-dashed" >
             <img src="assets/imgs/fonts/food-manav-yog-manch.jpg" class="w-1/2 mx-auto group-hover:-translate-y-1 duration-500" alt="">
             <h2 class="text-2xl font-bold mb-3" >Healthy Food</h2>
@@ -125,4 +125,4 @@
     </div>
 </section>
 
-<?php include_once('footer.php')?>
+<?php include_once('inc/footer.php')?>

@@ -33,17 +33,12 @@
         <div class="text-slate-200">
             <h5 class="text-2xl font-semibold text-white mb-4">Social Media</h5>
             <ul>
-              <div class="flex gap-5 mb-4 ">
-              <a href="#">
+            <div class="">
+              <a href="https://www.facebook.com/profile.php?id=100069841731432" class="flex items-center gap-2" >
                   <i class="fa-brands fa-facebook-f p-4 w-px h-px flex justify-center items-center rounded-full border hover:bg-white hover:text-red-600 text-white duration-500"></i>
+                  Facebook
               </a>
-              <a href="#">
-                  <i class="fa-brands fa-instagram p-4 w-px h-px flex justify-center items-center rounded-full border hover:bg-white hover:text-red-600 text-white duration-500"></i>
-              </a>
-              <a href="#">
-                  <i class="fa-brands fa-x-twitter p-4 w-px h-px flex justify-center items-center rounded-full border hover:bg-white hover:text-red-600 text-white duration-500"></i>
-              </a>
-              </div>
+            </div>
               
             </ul>
         </div>
@@ -52,9 +47,9 @@
             <h5 class="text-2xl font-semibold text-white mb-4">Newsletter</h5>
             <p class="mb-2" >Together, we can make a difference in the lives of children in need</p>
             <form class="flex h-10">
-                    <input type="email" class="w-1/2 py-2 px-4 text-sm bg-danger-dark outline-none border-2 border-white " placeholder="Your Email">
-                    <button class="py-2 px-4 bg-white inline-block duration-500 text-danger-dark font-bold">
-                        Contact Us
+                    <input type="email" class="w-1/2 py-2 px-4 text-sm bg-danger-dark outline-none border border-white " placeholder="Your Email">
+                    <button class="py-2 px-4 inline-block duration-500 text-danger-dark font-bold border border-white">
+                        <i class="fa-regular fa-paper-plane text-white"></i>
                     </button>
 
             </form>
@@ -67,7 +62,9 @@
     <div class="lg:grid grid-cols-2 text-white">
         <div>
             <p class="text-base font-semibold">
-                Copyright &copy; 2024 - 2025! All Rights Reserved.
+                Copyright &copy;
+                <?= date('Y') . " - " . (date('Y') + 1) ?>
+                ! All Right Reserved.
             </p>
         </div>
         <div class="text-base lg:text-end font-semibold">
@@ -84,6 +81,14 @@
 
 <!-- Owl Carousel JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- fancy box -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+
+<!-- Lightbox2 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 
 <!-- Custom JS -->
 <script src="assets/js/main.js"></script>

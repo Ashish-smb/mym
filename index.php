@@ -1,8 +1,8 @@
 <?php include_once('inc/header.php');?>
 
 <!-- banner -->
-<section class="px-6 lg:px-14 mb-8 overflow-hidden ">
-    <div class="grid grid-cols-1 lg:grid-cols-6 lg:gap-2">
+<section class="px-6 lg:px-14 mb-8 lg:py-8  ">
+    <div class="grid grid-cols-1 lg:grid-cols-6 lg:gap-2 overflow-hidden">
         <div class="col-span-4 h-[600px] relative mb-4 lg:mb-0">
             <img src="assets/imgs/manav-yog-manch-banner1.jpg" alt="" class="w-full h-full object-cover lg:rounded-l brightness-90">
             <div class="absolute top-10 px-6">
@@ -89,9 +89,21 @@
         </div>
 
         <div class="bg-white rounded-lg shadow-lg p-4">
-            <img src="assets/imgs/children1.jpeg" alt="" class="object-cover" >
-        </div>
+            <h1 class="font-semibold text-danger-light">
+                    Gallery
+                </h1>
+                <div class="w-32 h-[2px] bg-yellow-600 my-2"></div>
+                <div class="grid grid-cols-3 gap-2 mb-4">
+                    <?php for($i = 1; $i <= 6; $i++): ?>
+                        <img src="assets/imgs/gallery/lg-pic<?= $i ?>.jpg" alt="">
+                    <?php endfor;?>
+                </div>
 
+                <a href="gallery.php" class="w-32 px-4 py-2 text-xs gap-2 bg-orange-600 text-white flex items-center hover:bg-danger-light duration-500 group">
+                    Go To Gallery
+                <i class="fa-solid fa-arrow-right text-sm group-hover:translate-x-1 duration-300"></i>
+            </a>
+        </div>
 
     </div>
     <div class="lg:col-span-4">
@@ -174,68 +186,57 @@
         </div>
 
         <div class="bg-white rounded-lg my-8 shadow-lg p-4 space-y-4">
- 
-            <div class="grid grid-cols-2 gap-5">
-                <img src="assets/imgs/children.jpeg" alt="" class="w-full object-cover lg:object-fill h-[100px] rounded">
-                <div>
-                    <h1 class="font-bold text-red-700">Provide Education</h1>
-                    <p class="text-gray-500 text-sm">Everyone Can Access Education</p>
+
+        <?php
+            $events = [
+                [
+                    'id' => 1,
+                    'img' => 'assets/imgs/children.jpeg',
+                    'title' => 'Provide Education',
+                    'content' => 'Everyone Can Access Education',
+                ],
+                [
+                    'id' => 2,
+                    'img' => 'assets/imgs/children1.jpeg',
+                    'title' => 'Distribute Books',
+                    'content' => 'Everyone Can Gain Knowledge',
+                ],
+                [
+                    'id' => 3,
+                    'img' => 'assets/imgs/children2.jpeg',
+                    'title' => 'Provide Food',
+                    'content' => 'No One Can Sleep Without Eating Food',
+                ],
+                [
+                    'id' => 4,
+                    'img' => 'assets/imgs/work.jpeg',
+                    'title' => 'Distribute Senitizer Mask',
+                    'content' => 'Take Care of Poor Children Medical Hygiene',
+                ],
+                [
+                    'id' => 5,
+                    'img' => 'assets/imgs/bag.jpeg',
+                    'title' => 'Distribute School Bags',
+                    'content' => 'Take Care of Domestic Goods',
+                ],
+            ]
+        ?>
+
+            <?php foreach($events as $event): ?>
+                <div class="grid grid-cols-2 gap-5">
+                    <img src="<?=  $event['img'] ?>" alt="" class="w-full object-cover lg:object-fill h-[100px] rounded">
+                    <div>
+                        <h1 class="font-bold text-red-700"><?= $event['title'] ?></h1>
+                        <p class="text-gray-500 text-sm"><?= $event['content'] ?></p>
+                    </div>
+                    
                 </div>
-                
-            </div>
 
-            <div class="text-center">
-                <span class="bg-slate-300 w-full h-px block"></span>
-            </div>
-
-
-            <div class="grid grid-cols-2 gap-5">
-                <img src="assets/imgs/children1.jpeg" alt="" class="w-full h-[100px] object-cover lg:object-fill rounded">
-                <div>
-                    <h1 class="font-bold text-sm text-red-700">Distribute Books</h1>
-                    <p class="text-gray-500 text-sm">Everyone Can Gain Knowledge</p>
+                <div class="text-center">
+                    <span class="bg-slate-300 w-full h-px block"></span>
                 </div>
-            </div>
 
-            <div class="text-center">
-                <span class="bg-slate-300 w-full h-[2px] block"></span>
-            </div>
-
-            <div class="grid grid-cols-2 gap-5">
-                <img src="assets/imgs/children2.jpeg" alt="" class="w-full h-[100px] object-cover lg:object-fill rounded">
-                <div>
-                    <h1 class="font-bold text-sm text-red-700">Provide Food</h1>
-                    <p class="text-gray-500 text-sm">No One Can Sleep Without Eating Food</p>
-                </div>
-            </div>
-
-            <div class="text-center">
-                <span class="bg-slate-300 w-full h-[2px] block"></span>
-            </div>
-
-            <div class="grid grid-cols-2 gap-5">
-                <img src="assets/imgs/work.jpeg" alt="" class="w-full h-[100px] object-cover lg:object-fill rounded">
-                <div>
-                    <h1 class="font-bold text-sm text-red-700">Distribute Senitizer Mask</h1>
-                    <p class="text-gray-500 text-sm">Take Care of Poor Children Medical Hygiene</p>
-                </div>
-            </div>
-
-            <div class="text-center">
-                <span class="bg-slate-300 w-full h-[2px] block"></span>
-            </div>
-
-            <div class="grid grid-cols-2 gap-5">
-                <img src="assets/imgs/bag.jpeg" alt="" class="w-full h-[100px] object-cover lg:object-fill rounded">
-                <div>
-                    <h1 class="font-bold text-sm text-red-700">Distribute School Bags</h1>
-                    <p class="text-gray-500 text-sm">Take Care of Domestic Goods</p>
-                </div>
-            </div>
-
-            <div class="text-center">
-                <span class="bg-slate-300 w-full h-[2px] block"></span>
-            </div>
+            <?php endforeach;?>
 
             <div class="grid grid-cols-2 gap-5">
                 <img src="assets/imgs/manav-yog-manch-provide-education.jpeg" alt="" class="w-full h-[100px] object-cover lg:object-fill rounded">
@@ -250,89 +251,59 @@
 </section>
 
 <!-- Testimonial -->
-<section class="px-6 lg:px-14 mb-8 ">
+<section class="px-6 lg:px-14 mb-8 "> 
     <h2 class="text-4xl text-center font-bold mb-8">
         Testimonial
     </h2>
-    <!-- mobile carousel -->
-    <div class="p-4 block lg:hidden">
 
-        <h2 class="text-4xl font-bold mb-8 text-red-700">
-            Reviews
-        </h2>
-        <div class="owl-carousel testimonial-carousel mb-8">
-            <div>
-                <p class="text-sm mb-8 text-slate-500" >
-                    <i class="fa-solid fa-quote-left"></i>
-                    I volunteered with this NGO, and it was an inspiring experience. Their dedication to education and community empowerment truly makes a difference. The passionate team left me feeling motivated about the impact we can create together!
-                    <i class="fa-solid fa-quote-right"></i>
-                </p>
-                <h2 class="text-2xl font-semibold ">
-                    Kritika Upadhay
-                </h2>
-                <span class="text-slate-500">
-                    charity volunteering Delhi
-                </span>
-            </div>
     
-           
-        </div>
-    
-        <a href="donate.phpl" class="border text-xl px-6 py-2 bg-danger-light text-white hover:bg-red-700 duration-800 group duration-500">
-            Donate Us 
-            <i class="fa-solid fa-arrow-right ml-2 -rotate-45 group-hover:rotate-0 duration-500"></i>
-        </a>
-    </div>
-
-    <!-- Dekstop carousel -->
     <div class="grid grid-cols-1 lg:grid-cols-2">
-        <div class="p-4 hidden lg:block">
+        <div class="p-4">
 
             <h2 class="text-4xl font-bold mb-8 text-red-700">
                 Reviews
             </h2>
-            <div class="owl-carousel testimonial-carousel mb-8">
-                <div>
-                    <p class="text-gray-500 mb-8" >
-                        <i class="fa-solid fa-quote-left"></i>
-                            I volunteered with this NGO, and it was an inspiring experience. Their dedication to education and community empowerment truly makes a difference. The passionate team left me feeling motivated about the impact we can create together!
-                        <i class="fa-solid fa-quote-right"></i>
-                    </p>
-                    <h2 class="text-2xl font-semibold ">
-                        Kritika Upadhay
-                    </h2>
-                    <span class="text-slate-500">
-                        charity volunteering Delhi
-                    </span>
-                </div>
-    
-                <div>
-                    <p class="text-gray-500 mb-8" >
-                        <i class="fa-solid fa-quote-left"></i>
-                            I volunteered with this NGO, and it was an inspiring experience. Their dedication to education and community empowerment truly makes a difference. The passionate team left me feeling motivated about the impact we can create together!
-                        <i class="fa-solid fa-quote-right"></i>
-                    </p>
-                    <h2 class="text-2xl font-semibold ">
-                        Kritika Upadhay
-                    </h2>
-                    <span class="text-slate-500">
-                        charity volunteering Delhi
-                    </span>
-                </div>
+            <div class="owl-carousel testimonial-carousel mb-4">
 
+            <?php
+                $testimonials = [
+                    [
+                        "id" => 1,
+                        "content" => "I volunteered with this NGO, and it was an inspiring experience. Their dedication to education and community empowerment truly makes a difference. The passionate team left me feeling motivated about the impact we can create together!",
+                        "name" => "Manish Aggarwal",
+                        "work" => "Run an NGO"
+                    ],
+                    [
+                        "id" => 2,
+                        "content" => "I volunteered with this NGO, and it was an inspiring experience. Their dedication to education and community empowerment truly makes a difference. The passionate team left me feeling motivated about the impact we can create together!",
+                        "name" => "Rajeev Ranjan",
+                        "work" => "News Anchor"
+                    ],
+                    [
+                        "id" => 3,
+                        "content" => "I volunteered with this NGO, and it was an inspiring experience. Their dedication to education and community empowerment truly makes a difference. The passionate team left me feeling motivated about the impact we can create together!",
+                        "name" => "Vishesh Nagpan",
+                        "work" => "Government Officer"
+                    ],
+                ];
+            ?>
+
+            <?php foreach( $testimonials as $testimonial ): ?>
                 <div>
-                    <p class="text-gray-500 mb-8" >
-                        <i class="fa-solid fa-quote-left"></i>
-                            I volunteered with this NGO, and it was an inspiring experience. Their dedication to education and community empowerment truly makes a difference. The passionate team left me feeling motivated about the impact we can create together!
-                        <i class="fa-solid fa-quote-right"></i>
+                    <p class="text-gray-500 mb-4">
+                        <i class="fa-solid fa-quote-left text-gray-200 text-7xl"></i>
+                        <br>
+                        <?= $testimonial['content']; ?>
                     </p>
                     <h2 class="text-2xl font-semibold ">
-                        Kritika Upadhay
+                        <?= $testimonial['name']; ?>
                     </h2>
                     <span class="text-slate-500">
-                        charity volunteering Delhi
+                        <?= $testimonial['work']; ?>
                     </span>
                 </div>
+            <?php endforeach; ?>
+    
             </div>
 
             <a href="donate.php" class="border text-xl px-6 py-2 rounded font-bold bg-danger-light text-white hover:bg-red-700 duration-800 group duration-500">
@@ -340,8 +311,6 @@
                 <i class="fa-solid fa-arrow-right ml-2 -rotate-45 group-hover:rotate-0 duration-500"></i>
             </a>
         </div>
-
-        
 
         <div class="h-[400px]">
             <img src="assets/imgs/testimonial.jpg" alt="" class="h-full w-full shrink-0 object-cover lg:object-contain">

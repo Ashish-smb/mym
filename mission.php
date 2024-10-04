@@ -65,8 +65,11 @@
     </div>
 
     <!-- sidebar -->
-    <div class="col-span-1 p-4">
-        <?php include('inc/sidebar.php') ?>
+    <div class="col-span-1">
+        <?php
+            $page = "mission";
+            include('inc/sidebar.php');
+        ?>
     </div>
 </section>
 

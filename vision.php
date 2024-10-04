@@ -19,14 +19,17 @@
             </div>
     
             <div>
-                <img src="assets/imgs/children2.jpeg" alt="" class="w-full h-full lg:h-[450px] object-cover">
+                <img src="assets/imgs/children2.jpeg" alt="" class="w-full lg:h-full object-cover">
             </div>
         </div>
     </section>
 
     <!-- sidebar -->
     <div class="col-span-1 p-4">
-        <?php include('inc/sidebar.php') ?>
+        <?php
+            $page = "vision";
+            include('inc/sidebar.php');
+        ?>
     </div>
 </section>
 

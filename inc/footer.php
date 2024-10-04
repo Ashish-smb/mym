@@ -13,7 +13,7 @@
             <ul class="leading-8">
                 <li>
                     <i class="fa-solid fa-location-dot"></i>
-                    RZA-1/7, First Floor. Ploat No-15, Dwarkapuri, New Delhi 110019
+                    WZ-303, First Floor, Chhotiyal Mohalla, Palam, New Delhi-110045
                 </li>
                 <li>
                     <i class="fa-solid fa-phone"></i>
@@ -23,22 +23,34 @@
                 </li>
                 <li>
                     <i class="fa-solid fa-envelope"></i>
-                    <a href="mailto:manavyogmanch@gmail.com">
-                        manavyogmanch@gmail.com
+                    <a href="mailto:manavyogmanchngo2005@gmail.com">
+                        manavyogmanchngo2005@gmail.com
                     </a>
                 </li>
             </ul>
         </div>
 
         <div class="text-slate-200">
-            <h5 class="text-2xl font-semibold text-white mb-4">Social Media</h5>
-            <ul>
-            <div class="">
-              <a href="https://www.facebook.com/profile.php?id=100069841731432" class="flex items-center gap-2" >
-                  <i class="fa-brands fa-facebook-f p-4 w-px h-px flex justify-center items-center rounded-full border hover:bg-white hover:text-red-600 text-white duration-500"></i>
-                  Facebook
-              </a>
-            </div>
+            <h5 class="text-2xl font-semibold text-white mb-4">Links</h5>
+            <ul class="leading-8" >
+                <li >
+                    <a href="index.php" class="hover:text-orange-600 duration-500" >Home</a>
+                </li>
+                <li >
+                    <a href="about.php" class="hover:text-orange-600 duration-500" >About Us</a>
+                </li>
+                <li >
+                    <a href="conditions.php" class="hover:text-orange-600 duration-500" >Terms And Conditions</a>
+                </li>
+                <li >
+                    <a href="refund.php" class="hover:text-orange-600 duration-500" >Refund Policy</a>
+                </li>
+                <li >
+                    <a href="contact.php" class="hover:text-orange-600 duration-500" >Contact Us</a>
+                </li>
+                <li >
+                    <a href="join-us.php" class="hover:text-orange-600 duration-500" >Join Us</a>
+                </li>
               
             </ul>
         </div>
@@ -46,13 +58,19 @@
         <div class="text-slate-200 leading-6">
             <h5 class="text-2xl font-semibold text-white mb-4">Newsletter</h5>
             <p class="mb-2" >Together, we can make a difference in the lives of children in need</p>
-            <form class="flex h-10">
+            <form href="#" >
+                <div class="flex h-10 mb-4">
                     <input type="email" class="w-1/2 py-2 px-4 text-sm bg-danger-dark outline-none border border-white " placeholder="Your Email">
-                    <button class="py-2 px-4 inline-block duration-500 text-danger-dark font-bold border border-white">
+                    <button class="py-2 px-4 inline-block duration-500 text-danger-dark font-bold  border border-white">
                         <i class="fa-regular fa-paper-plane text-white"></i>
                     </button>
-
+                </div>
             </form>
+
+            <a href="https://www.facebook.com/profile.php?id=100069841731432" class="flex items-center gap-2" >
+                <i class="fa-brands fa-facebook-f p-4 w-px h-px flex justify-center items-center rounded-full border hover:bg-white hover:text-red-600 text-white duration-500"></i>
+                Facebook
+            </a>
         </div>
     </div>
 </footer>

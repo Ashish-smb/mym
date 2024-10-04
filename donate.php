@@ -1,8 +1,8 @@
 <?php include_once('inc/header.php')?>
 
 <!-- Donate Us -->
-<section class="px-6 lg:px-14 mb-6" x-data="{ donateAmount: undefined }">
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<section class="px-6 lg:px-14 mb-6 mt-4" x-data="{ donateAmount: undefined }">
+    <div class="grid sm:grid-cols-3 gap-6">
         <div class="text-white cursor-pointer" @click.prevent="donateAmount = 100">
             <img src="assets/imgs/images-1.jpg" class="w-full" alt="">
 

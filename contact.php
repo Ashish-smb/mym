@@ -1,7 +1,10 @@
 <?php include_once('inc/header.php');
     $title = "Get in Touch";
     $subtitle = "We’re here to help. Reach out to us with your questions or ideas!";
-    include_once("inner-banner.php");?>
+    include_once("inner-banner.php");
+?>
+
+
 
 <!-- contact us -->
 <section class="px-6 lg:px-14 mt-6 lg:mt-0 mb-5">
@@ -93,14 +96,13 @@
             <div class="bg-gray-400/80  justify-center text-center py-8 rounded-3xl border-dashed border-2 border-purple-300">
                 <i class="fa-solid fa-location-dot bg-orange-600 w-14 h-14 flex justify-center items-center mx-auto px-4 py-4 text-2xl text-white rounded-full"></i>
                 <p class="text-amber-950 font-bold text-lg py-2 ">Our Location</p>
-                <span class="text-gray-800">RZA-1/7, First Floor. Ploat No-15, Dwarkapuri, New Delhi 110019</span>
+                <span class="text-gray-800"> WZ-303, First Floor, Chhotiyal Mohalla, Palam, New Delhi-110045</span>
             </div>
         </div>
     </div>
  </section>
 
- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.4954662684704!2d77.25450307428885!3d28.524823688965974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce165e58593c5%3A0xe01d5ebf8b9b1f43!2sSpread%20My%20Career!5e0!3m2!1sen!2sin!4v1726812062159!5m2!1sen!2sin" 
- class="border-0 w-full h-[400px]"
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56052.90454345326!2d77.01061018776409!3d28.590579538707928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b3f9902dce7%3A0xdf51d27e693abbea!2sPalam%2C%20Delhi!5e0!3m2!1sen!2sin!4v1727956853031!5m2!1sen!2sin"  class="border-0 w-full h-[400px]"
  allowfullscreen=""
  loading="lazy"
  referrerpolicy="no-referrer-when-downgrade">

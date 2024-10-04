@@ -89,7 +89,10 @@
     </div>
 
     <div class="col-span-1">
-        <?php include('inc/sidebar.php'); ?>
+        <?php
+            $page = "about";
+            include('inc/sidebar.php');
+        ?>
     </div>
 
 </section>

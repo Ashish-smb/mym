@@ -1,6 +1,4 @@
 <!-- A word from president -->
-
-
 <div class="flex items-center py-2 gap-2 mb-3">
     <img src="assets/imgs/manav-yog-manch-members.jpg" alt="" class="rounded-full w-20 h-20">
     <div>
@@ -10,12 +8,13 @@
 </div>
 
 <!-- Donate Button -->
-<a href="donate.php" class="border bg-orange-500 text-center w-full text-white font-bold py-2 inline-block gap-1 items-center px-4 hover:bg-success-dark duration-500 mb-2">
+<a href="donate.php" class="border bg-orange-500 text-center w-full text-white font-bold py-2 inline-block gap-1 items-center px-4 hover:bg-danger-light duration-500 mb-2">
     <i class="fa-solid fa-indian-rupee-sign"></i>
     Donate Us
 </a>
 
 <!-- Mission - few words -->
+<?php if(!isset($page) || ( isset($page) && $page !== "mission" ) ): ?>
 <div class="mb-3">
     <h1 class="font-semibold text-danger-light">
         Mission
@@ -41,9 +40,11 @@
         <i class="fa-solid fa-arrow-right text-sm group-hover:translate-x-1 duration-300"></i>
     </a>
 </div>
+<?php endif; ?>
 
 <!-- Vision - few words -->
-<div class="mb-3">
+<?php if(!isset($page) || ( isset($page) && $page !== "vision" ) ): ?>
+    <div class="mb-3">
     <h1 class="font-semibold text-danger-light">
         Vision
     </h1>
@@ -68,9 +69,11 @@
         Go To Vision
         <i class="fa-solid fa-arrow-right text-sm group-hover:translate-x-1 duration-300"></i>
     </a>
-</div>
+    </div>
+<?php endif; ?>
 
 <!-- Our Projects -->
+<?php if(!isset($page) || ( isset($page) && $page !== "projects" ) ): ?>
 <div cass="mb-4 border" >
     <h1 class="font-semibold text-danger-light">
         Our Projects
@@ -122,8 +125,10 @@
         <i class="fa-solid fa-arrow-right text-sm group-hover:translate-x-1 duration-300"></i>
     </a>
 </div>
+<?php endif; ?>
 
 <!-- Image Gallery -->
+<?php if(!isset($page) || ( isset($page) && $page !== "gallery" ) ): ?>
 <div>
     <h1 class="font-semibold text-danger-light">
             Gallery
@@ -131,7 +136,9 @@
         <div class="w-32 h-[2px] bg-yellow-600 my-2"></div>
         <div class="grid grid-cols-3 gap-2 mb-4">
             <?php for($i = 1; $i <= 6; $i++): ?>
-                <img src="assets/imgs/gallery/lg-pic<?= $i ?>.jpg" alt="">
+                <a href="assets/imgs/gallery/pic<?= $i ?>.jpg" data-fancybox="sidebar_gallery">
+                    <img src="assets/imgs/gallery/pic<?= $i ?>_thumb.jpg" alt=""  >
+                </a>
             <?php endfor;?>
         </div>
 
@@ -140,5 +147,5 @@
         <i class="fa-solid fa-arrow-right text-sm group-hover:translate-x-1 duration-300"></i>
     </a>
 </div>
-
-        
+<?php endif; ?>
+  

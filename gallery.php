@@ -15,49 +15,50 @@
     
         
         <div class="grid grid-cols-2 lg:grid-cols-3 gap-6 mb-4" x-show="currentTab == 'tab1'">
-            <?php for( $i = 1; $i <= 27; $i++ ): ?>
-                <div class="brightness-50 hover:brightness-95 duration-500">
-                  
-                    <a href="assets/imgs/gallery/lg-pic<?= $i ?>.jpg" data-fancybox="mym-gallery">
-                        <img src="assets/imgs/gallery/sm-pic<?=$i?>.jpg" alt="">
-                    </a>
-                </div>
-            <?php endfor; ?>
+            <?php
+                $directory = 'assets/imgs/gallery/';
+                $thumbs = glob( $directory . "*_thumb.{jpg,jpeg,png,gif}", GLOB_BRACE);
+
+                $current_page = (int) ($_GET['page'] ?? 1);
+                $max_per_page = 12;
+                $last_item = $current_page * $max_per_page;
+                $start_item = $current_page * $max_per_page - $max_per_page;
+            ?>
+            <?php for( $i = $start_item; $i < $last_item; $i++ ): if( isset( $thumbs[$i] ) ): ?>
+                    <?php
+                        $filenameWithThumb = basename($thumbs[$i]);
+                        $org_image = str_replace('_thumb', '', $filenameWithThumb);
+                    ?>
+                    <div class="brightness-50 hover:brightness-95 duration-500">
+                        <a href="<?= $directory . $org_image ?>" data-fancybox="mym-gallery">
+                            <img src="<?= $thumbs[$i] ?>" alt="">
+                        </a>
+                    </div>
+            <?php else: break; endif; endfor; ?>
         </div>
     
-        <div class="flex justify-end">
-              <button class="items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
-                <span class="sr-only">Previous</span>
-                <i class="fa-solid fa-chevron-left text-sm"></i>
-              </button>
-              
-              <button 
-              :class="[currentTab == 'tab1' ? 'bg-indigo-500 text-white' : 'bg-white text-black']"
-              class="items-center px-4 py-2 text-sm font-semibold border" id="tab1" 
-              @click="currentTab = 'tab1'">1
-            </button>
-              <button 
-              :class="[currentTab == 'tab2' ? 'bg-indigo-500 text-white' : 'bg-white text-black']"
-              class="items-center px-4 py-2 text-sm font-semibold border" id="tab2"
-               @click="currentTab = 'tab2'">2
-            </button>
-              <button 
-              :class="currentTab == 'tab3' ? 'bg-indigo-500 text-white' : 'bg-white text-black'"
-              class="items-center px-4 py-2 text-sm font-semibold border" id="tab3" 
-              @click="currentTab = 'tab3'">3
-            </button>
-              
-              <button class=" items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
-                <span class="sr-only">Next</span>
-                <i class="fa-solid fa-chevron-right text-sm"></i>
-              </button>
-    
-          </div>
+        <div class="flex justify-end" >
+            <?php 
+                    $total_pages = ceil(count($thumbs) / $max_per_page); // Calculate total pages
+
+                    for ($page = 1; $page <= $total_pages; $page++): 
+                        $isActive = $current_page === $page ? 'bg-red-500 text-white' : 'bg-white text-black';
+            ?>
+                    <a href="gallery.php?page=<?= $page ?>" class="<?= $isActive ?> border px-4 py-2">
+                        <?= $page ?>
+                    </a>
+            <?php 
+                endfor; 
+            ?>
+        </div>
 
     </div>
 
     <div class="col-span-1" >
-            <?php include('inc/sidebar.php'); ?>
+        <?php
+            $page = 'gallery';
+            include('inc/sidebar.php'); 
+         ?>
     </div>
 </section>
 <?php include_once('inc/footer.php') ?>

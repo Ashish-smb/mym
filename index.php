@@ -95,7 +95,9 @@
                 <div class="w-32 h-[2px] bg-yellow-600 my-2"></div>
                 <div class="grid grid-cols-3 gap-2 mb-4">
                     <?php for($i = 1; $i <= 6; $i++): ?>
-                        <img src="assets/imgs/gallery/lg-pic<?= $i ?>.jpg" alt="">
+                        <a href="assets/imgs/gallery/pic<?=$i?>.jpg" data-fancybox="mym-gallery">
+                            <img src="assets/imgs/gallery/pic<?= $i ?>_thumb.jpg" alt="">
+                        </a>
                     <?php endfor;?>
                 </div>
 
@@ -116,51 +118,50 @@
                 <div class="bg-red-700 w-24 h-px"></div>
             </div>
             <img src="assets/imgs/manav-yog-manch-banner1.jpg" alt="" class="w-full object-cover">
+
+            <?php 
+                $events = [
+                    [
+                        'id' => 1,
+                        'img' => 'assets/imgs/manav-yog-manch-distribute-bags.jpeg',
+                        'title' => 'FREE SCHOOL BAG DISTRIBUTION',
+                        'content' => 'We give free school bags to children in need, helping them carry their books and supplies for school.',
+                    ],
+                    [
+                        'id' => 2,
+                        'img' => 'assets/imgs/manav-yog-manch-provide-education.jpeg',
+                        'title' => 'FREE EDUCATION PROVIDE',
+                        'content' => ' We offer quality education and resources to help children follow their dreams and escape poverty.',
+                    ],
+                    [
+                        'id' => 3,
+                        'img' => 'assets/imgs/manav-yog-manch-distribute-food.jpeg',
+                        'title' => 'FREE MID-DAY MEAL DISTRIBUTION',
+                        'content' => 'Our program ensures every child gets a healthy meal at school to stay focused and attend regularly.',
+                    ],
+                    
+                ]
+            ?>
             
-            <div>   
-                <div class="flex flex-col sm:flex-row gap-5 mb-4">
-                    <img src="assets/imgs/manav-yog-manch-distribute-bags.jpeg" alt="" class="shrink-0 object-cover sm:w-36">
-                    <div>
-                        <h1 class="font-semibold text-lg text-red-700">FREE SCHOOL BAG DISTRIBUTION</h1>
-                        <p class="text-gray-500 text-sm">
-                            We give free school bags to children in need, helping them carry their books and supplies for school.
-                        </p>
+            <?php foreach($events as $event): ?>
+            
+                <div>   
+                    <div class="flex flex-col sm:flex-row gap-5 mb-4">
+                        <img src="<?= $event['img'] ?>" alt="" class="shrink-0 object-cover sm:w-36">
+                        <div>
+                            <h1 class="font-semibold text-lg text-red-700 uppercase"><?= $event['title'] ?></h1>
+                            <p class="text-gray-500 text-sm">
+                                <?= $event['content'] ?>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-center ">
+                        <span class="bg-slate-200 w-full h-px block"></span>
                     </div>
                 </div>
-                <div class="text-center ">
-                    <span class="bg-slate-200 w-full h-px block"></span>
-                </div>
-            </div>
 
-            <div>
-                <div class="flex gap-5 mb-4 flex-col sm:flex-row">
-                    <img src="assets/imgs/manav-yog-manch-provide-education.jpeg" alt="" class="object-cover sm:w-36 shrink-0 w-full">
-                    <div>
-                        <h1 class="font-semibold text-lg text-red-700">FREE EDUCATION PROVIDE</h1>
-                        <p class="text-gray-500 text-sm">
-                            We offer quality education and resources to help children follow their dreams and escape poverty.
-                        </p>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <span class="bg-slate-200 w-full h-px block"></span>
-                </div>
-            </div>
+            <?php endforeach; ?>
 
-            <div>
-                <div class="flex gap-5 mb-4 flex-col sm:flex-row">
-                    <img src="assets/imgs/manav-yog-manch-distribute-food.jpeg" alt="" class="object-cover sm:w-36 shrink-0 w-full">
-                    <div>
-                        <h1 class="font-semibold text-lg text-red-700">FREE MID-DAY MEAL DISTRIBUTION</h1>
-                        <p class="text-gray-500 text-sm">
-                            Our program ensures every child gets a healthy meal at school to stay focused and attend regularly.
-                        </p>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <span class="bg-slate-200 w-full h-px block"></span>
-                </div>
-            </div>
             
             <div>
                 <div class="flex gap-5 flex-col sm:flex-row">
@@ -226,7 +227,7 @@
                 <div class="grid grid-cols-2 gap-5">
                     <img src="<?=  $event['img'] ?>" alt="" class="w-full object-cover lg:object-fill h-[100px] rounded">
                     <div>
-                        <h1 class="font-bold text-red-700"><?= $event['title'] ?></h1>
+                        <h1 class="font-semibold text-red-700"><?= $event['title'] ?></h1>
                         <p class="text-gray-500 text-sm"><?= $event['content'] ?></p>
                     </div>
                     
@@ -241,7 +242,7 @@
             <div class="grid grid-cols-2 gap-5">
                 <img src="assets/imgs/manav-yog-manch-provide-education.jpeg" alt="" class="w-full h-[100px] object-cover lg:object-fill rounded">
                 <div>
-                    <h1 class="font-bold text-sm text-red-700">Helping hand for Education</h1>
+                    <h1 class="font-semibold text-sm text-red-700">Helping hand for Education</h1>
                     <p class="text-gray-500 text-sm">Everyone Can Gain Knowledge</p>
                 </div>
             </div>
@@ -320,3 +321,4 @@
 </section>
 
 <?php include_once('inc/footer.php');?>
+

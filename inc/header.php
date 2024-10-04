@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +22,7 @@
 <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+    
 <!-- Topbar -->
 <header class="px-6 lg:px-14 lg:block hidden">
     <div class="flex justify-between items-center w-full">
@@ -38,17 +41,18 @@
                 </div>
             </div>
     
+    
             <div class="flex items-center gap-2">
                 <img src="assets/imgs/fonts/manav-yog-manch-email.png" class="w-8" alt="">
-                <div class="leading-5" >
+                <div class="leading-5">
                     Mail Us
-                    <a href="mailto:manavyogmanch@gmail.com" class="block">
-                        manavyogmanch@gmail.com
+                    <a href="mailto:manavyogmanchngo2005@gmail.com" class="block">
+                    manavyogmanchngo2005@gmail.com
                     </a>
                 </div>
             </div>
     
-            <a href="donate.php" class="border bg-orange-500 text-white font-bold py-2  gap-1 items-center px-4 rounded text-lg hover:bg-success-dark duration-500">
+            <a href="donate.php" class="border bg-orange-500 text-white font-bold py-2  gap-1 items-center px-4 rounded text-lg hover:bg-danger-light duration-500">
                 <i class="fa-solid fa-indian-rupee-sign"></i>
                 Donate Us
             </a>
@@ -151,7 +155,9 @@
 <nav class="flex lg:hidden" x-data="{showSidebar: false}">
     <!-- Header -->
     <div class="flex justify-between items-center px-8 w-full">
-        <img src="assets/imgs/logo.png" alt="" class=" w-1/3">
+        <a href="index.php">
+            <img src="assets/imgs/logo.png" alt="" class=" lg:w-1/3">
+        </a>
         <button @click="showSidebar = !showSidebar" class="text-xl md:text-2xl">
             <i class="fas" :class="showSidebar ? 'fa-xmark' : 'fa-bars'"></i>
         </button>

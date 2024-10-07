@@ -85,7 +85,16 @@
                 </div>
             </div>
             
+            <h1 class="font-semibold text-lg text-red-700">Volunteer</h1>
+            <span class="bg-slate-300 w-full h-px block my-2"></span>
            
+            <div class="flex items-center py-2 gap-5">
+                <img src="assets/imgs/volunteer.jpeg" alt="" class="rounded-full w-20 h-20">
+                <div>
+                    <h1 class="font-semibold text-lg text-red-700">Prince Aarya</h1>
+                    <p class="text-gray-500 text-sm">Volunteer</p>
+                </div>
+            </div> 
         </div>
 
         <div class="bg-white rounded-lg shadow-lg p-4">

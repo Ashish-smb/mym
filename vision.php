@@ -25,7 +25,7 @@
     </section>
 
     <!-- sidebar -->
-    <div class="col-span-1 p-4">
+    <div class="col-span-1">
         <?php
             $page = "vision";
             include('inc/sidebar.php');
